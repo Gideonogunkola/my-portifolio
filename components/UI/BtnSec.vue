@@ -1,6 +1,6 @@
 <template>
     <div>  
-         <div class="h-14 w-36 md:h-16 md:w-44 rounded-3xl text-pryColor border-pryColor border-2  flex justify-center items-center cursor-pointer">
+         <div class="h-16 w-36 lg:h-normal lg:w-48 md:w-44 rounded-3xl text-pryColor border-pryColor border-2 flex justify-center items-center cursor-pointer ">
             <nuxt-link   :to="href">
             {{text}}
         </nuxt-link> </div> 

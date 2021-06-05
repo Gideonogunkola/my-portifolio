@@ -32,11 +32,18 @@ module.exports = {
       },
       margin: {
         '100': '30rem',
+        '200': '40rem',
+       },
+       height: {
+        normal: '4.6rem',
+        sub: '4.3rem',
        }
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+     require('@tailwindcss/forms'),
+  ],
 }

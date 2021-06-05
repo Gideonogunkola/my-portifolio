@@ -1,6 +1,9 @@
-<template>
+  <template>
   <div class="w-11/12 md:w-4/5 mx-auto text-base md:text-xl">
     <div>
+<!-- Preloader Begins -->
+     <Preloader v-if="show" />
+<!-- Preloader Ends -->
 <!-- Hero Section Begins -->
       <section class="hero-section h-screen">
        <div class=" grid grid-col-1 lg:grid-cols-2 gap-10 h-screen">
@@ -31,11 +34,11 @@
       </section>
 <!-- Hero Section Ends -->
 
-<!-- Project Section Begins        -->
-      <section class="projects mt-100 lg:mt-0">
+<!--  Project Section Begins  -->
+      <section class="projects mt-100 lg:mt-0 sm:mt-200">
         <div class="title lg:pt-16">
             <h1 class="common  ">My Works</h1>
-            <p class="text-center pt-4 pb-12">Some selected projects</p>
+            <p class="text-center pt-4 pb-12 lg:pb-24">Some selected projects</p>
         </div>
 
         <div class=" grid gap-14 grid-col-1 md:grid-cols-2 xl:grid-cols-3">
@@ -75,7 +78,7 @@
        <div>
           <div class="title">
             <h1 class="common ">My Process</h1>
-            <p class="text-center pt-4 pb-12 ">How I come about my solution</p>
+            <p class="text-center pt-4  pb-12 lg:pb-24">How I come about my solution</p>
           </div>
           <div class="flex md:justify-between justify-center flex-wrap">
             <div class="border-2 h-72 w-52 border-blue-500 rounded-3xl flex items-center mb-8 xl:mb-0">
@@ -93,9 +96,9 @@
                  <h3 class="text-2xl font-semibold ">Define</h3>
                  <p class="leading-9 pt-4">
                   I clearly state 
-                  the painpoints
+                 the users problems
                   that need 
-                  solution</p>
+                  solutions</p>
               </div> 
             </div>
             <div class="border-2 h-72 w-52 border-yellow-500 rounded-3xl flex items-center mb-8 xl:mb-0">
@@ -104,8 +107,7 @@
                  <p class="leading-9 pt-4">
                   I brainstorm all
                   possible ideas to 
-                  solve the pro-
-                  blems identified.</p>
+                  solve the problems.</p>
               </div> 
             </div>
             <div class="border-2 h-72 w-52 border-purple-500 rounded-3xl flex items-center mb-8 xl:mb-0">
@@ -124,8 +126,8 @@
                  <p class="leading-9 pt-4">
                   I conduct a 
                   usability testing,
-                  iterate , and
-                  then deliver..</p>
+                  iterate, and
+                  then deliver.</p>
               </div> 
             </div>
 
@@ -134,27 +136,44 @@
      </section>
 <!-- My Process Ends -->
 
-<!-- Cotact-section Begins -->
+<!-- Contact-section Begins -->
       <section class="contact">
         <div>
           <div class="title">
             <h1 class="common ">Let's Talk</h1>
-            <p class="text-center pt-4 pb-12 ">I am available for your next project</p>
+            <p class="text-center pt-4 pb-12 lg:pb-24 ">I am available for your next project</p>
           </div>
 
-          <div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div>
-              <div>
-                
-              </div>
+                <p class="pb-6 lg:pb-10 text-xl md:text-2xl font-bold">My Contact Details</p>
+                <div class="flex items-center pb-6 md:pb-10">
+                    <div class=" h-14 w-14 md:h-20 md:w-20 rounded-full bg-pryColor flex justify-center items-center" :class="myText">
+                      <span class="iconify" data-icon="whh:emailalt" data-inline="false"></span>
+                    </div>
+                    <p class="pl-6">me@gideonogunkola.com</p>
+                </div>
+                <div class="flex items-center pb-6 md:pb-10">
+                    <div class=" h-14 w-14 md:h-20 md:w-20 rounded-full bg-pryColor flex justify-center items-center" :class="myText">
+                      <span class="iconify" data-icon="whh:emailalt" data-inline="false"></span>
+                    </div>
+                    <p class="pl-6">ogunkolagideon@gmail.com</p>
+                </div>
+                <div class="flex items-center pb-6 md:pb-10">
+                    <div class=" h-14 w-14 md:h-20 md:w-20 rounded-full bg-pryColor flex justify-center items-center" :class="myText">
+                      <span class="iconify h-7 w-auto" data-icon="fluent:call-24-filled" data-inline="false"></span>
+                    </div>
+                    <p class="pl-6">+234 810 674 4642</p>
+                </div>
             </div>
-            <div>
 
+            <div>
+              <Form class="" />
             </div>
           </div>
         </div>
       </section>
-<!-- Cotact-section Ends -->
+<!-- Contact-section Ends -->
   </div>
   </div>
 </template>
@@ -162,19 +181,58 @@
 <script> 
 import BtnPry from '~/components/UI/BtnPry';
 import BtnSec from '~/components/UI/BtnSec';
-import Typewriter from '../components/UI/Typewriter.vue';
+import Typewriter from '../components/UI/Typewriter';
+import Form from '~/components/UI/Form';
+import Preloader from '../components/UI/Preloader.vue';
 export default {
-
   data(){
     return{
       greetings:'<Hello there!/>',
+      title: "Gideon Ogunkola | UX Designer | Frontend Developer",
+      show: false
     }
   },
+  
   components:{
     BtnPry,
     BtnSec,
     Typewriter,
+    Form,
+    Preloader,
   },
+
+  head() {
+      return {
+        title: this.title,
+        meta: [
+          {
+            hid: 'description',
+            name: 'UX Designer | Frontend Developer',
+            content: 'Gideon is a professional UX Designer and Frontend Developer'
+          }
+        ]
+      }
+    },
+
+      computed:{
+      myText(){
+        if(this.$colorMode.preference === 'dark' ){
+            return  "text-secColor" 
+        }else{
+            return "text-white" 
+        }
+    }
+  },
+
+  methods:{
+    start(){
+      this.show = true
+    },
+    finish(){
+      this.show = false
+    }
+  },
+
   
   }
 </script>
@@ -184,5 +242,4 @@ export default {
 .common {
 @apply pt-28 text-3xl leading-tight md:text-4xl lg:text-4xl font-bold md:leading-none text-center xl:pt-36
 }
-
 </style>

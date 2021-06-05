@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'gideon-ogunkola',
+    title: 'Gideon Ogunkola | UX Designer | Frontend Developer',
     htmlAttrs: {
       lang: 'en'
     },

@@ -69,7 +69,7 @@ export default {
           }
       }
   },
-  created(){
+  beforeMount(){
        if(this.$colorMode.preference === 'light'){
             this.toggleActive = false
         }else{
