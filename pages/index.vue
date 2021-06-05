@@ -42,24 +42,102 @@
         </div>
 
         <div class=" grid gap-14 grid-col-1 md:grid-cols-2 xl:grid-cols-3">
-          <div class=" mx-auto h-auto flex lg:w-96 lg:h-96 cursor-pointer">
-            <img class=" w-full transform transition duration-500 hover:scale-100" src="~/assets/images/Rectangle 6.png" alt="projects">
+          <!-- individual Project -->
+          <div class=" mx-auto h-auto flex flex-col lg:w-96 lg:h-96 rounded-3xl cursor-pointer relative" @mouseenter="toggle">
+            <img class=" w-full" src="~/assets/images/Rectangle 6.png" alt="projects">
+            <transition name="caption">
+            <div class=" h-full w-full bg-pryColor rounded-3xl bg-opacity-80 pt-48 lg:pt-60 pl-10 absolute"
+                 v-if="load"
+                 @mouseleave="toggleOut"
+                 :class="myText" >
+              <h1 class="text-2xl md:text-3xl font-semibold">Handy Man</h1>
+              <p>An in-demand Service App</p>
+              <p class=" text-xl md:text-2xl font-medium pt-6 md:pt-8" >UI/UX - Mobile App Design</p>
+            </div>
+            </transition>
           </div>
-          <div class=" mx-auto h-auto flex lg:w-96 lg:h-96 cursor-pointer">
-            <img class=" w-full transform transition duration-500 hover:scale-100" src="~/assets/images/Rectangle 7.png" alt="projects">
+          <!-- individual Project Ends -->
+
+           <!-- individual Project -->
+          <div class=" mx-auto h-auto flex flex-col lg:w-96 lg:h-96 rounded-3xl cursor-pointer relative" @mouseenter="toggle">
+            <img class=" w-full" src="~/assets/images/Rectangle 7.png" alt="projects">
+            <transition name="caption">
+            <div class=" h-full w-full bg-pryColor rounded-3xl bg-opacity-80 pt-48 lg:pt-60 pl-10 absolute"
+                 v-if="load"
+                 @mouseleave="toggleOut"
+                 :class="myText" >
+              <h1 class="text-2xl md:text-3xl font-semibold">Handy Man</h1>
+              <p>An in-demand Service App</p>
+              <p class=" text-xl md:text-2xl font-medium pt-6 md:pt-8" >UI/UX - Mobile App Design</p>
+            </div>
+            </transition>
           </div>
-          <div class=" mx-auto h-auto flex lg:w-96 lg:h-96 cursor-pointer ">
-            <img class=" w-full transform transition duration-500 hover:scale-100" src="~/assets/images/Rectangle 8.png" alt="projects">
+          <!-- individual Project Ends -->
+
+           <!-- individual Project -->
+          <div class=" mx-auto h-auto flex flex-col lg:w-96 lg:h-96 rounded-3xl cursor-pointer relative" @mouseenter="toggle">
+            <img class=" w-full" src="~/assets/images/Rectangle 8.png" alt="projects">
+            <transition name="caption">
+            <div class=" h-full w-full bg-pryColor rounded-3xl bg-opacity-80 pt-48 lg:pt-60 pl-10 absolute"
+                 v-if="load"
+                 @mouseleave="toggleOut"
+                 :class="myText" >
+              <h1 class="text-2xl md:text-3xl font-semibold">Handy Man</h1>
+              <p>An in-demand Service App</p>
+              <p class=" text-xl md:text-2xl font-medium pt-6 md:pt-8" >UI/UX - Mobile App Design</p>
+            </div>
+            </transition>
           </div>
-            <div class=" mx-auto h-auto flex lg:w-96 lg:h-96 cursor-pointer ">
-            <img class=" w-full transform transition duration-500 hover:scale-100" src="~/assets/images/Rectangle 9.png" alt="projects">
+          <!-- individual Project Ends -->
+
+           <!-- individual Project -->
+          <div class=" mx-auto h-auto flex flex-col lg:w-96 lg:h-96 rounded-3xl cursor-pointer relative" @mouseenter="toggle">
+            <img class=" w-full" src="~/assets/images/Rectangle 9.png" alt="projects">
+            <transition name="caption">
+            <div class=" h-full w-full bg-pryColor rounded-3xl bg-opacity-80 pt-48 lg:pt-60 pl-10 absolute"
+                 v-if="load"
+                 @mouseleave="toggleOut"
+                 :class="myText" >
+              <h1 class="text-2xl md:text-3xl font-semibold">Handy Man</h1>
+              <p>An in-demand Service App</p>
+              <p class=" text-xl md:text-2xl font-medium pt-6 md:pt-8" >UI/UX - Mobile App Design</p>
+            </div>
+            </transition>
           </div>
-            <div class=" mx-auto h-auto flex lg:w-96 lg:h-96 cursor-pointer">
-            <img class=" w-full transform transition duration-500 hover:scale-100" src="~/assets/images/Rectangle 10.png" alt="projects">
+          <!-- individual Project Ends -->
+
+           <!-- individual Project -->
+          <div class=" mx-auto h-auto flex flex-col lg:w-96 lg:h-96 rounded-3xl cursor-pointer relative" @mouseenter="toggle">
+            <img class=" w-full" src="~/assets/images/Rectangle 10.png" alt="projects">
+            <transition name="caption">
+            <div class=" h-full w-full bg-pryColor rounded-3xl bg-opacity-80 pt-48 lg:pt-60 pl-10 absolute"
+                 v-if="load"
+                 @mouseleave="toggleOut"
+                 :class="myText" >
+              <h1 class="text-2xl md:text-3xl font-semibold">Handy Man</h1>
+              <p>An in-demand Service App</p>
+              <p class=" text-xl md:text-2xl font-medium pt-6 md:pt-8" >UI/UX - Mobile App Design</p>
+            </div>
+            </transition>
           </div>
-            <div class=" mx-auto h-auto flex lg:w-96 lg:h-96 cursor-pointer">
-            <img class=" w-full transform transition duration-500 hover:scale-100" src="~/assets/images/Rectangle 11.png" alt="projects">
+          <!-- individual Project Ends -->
+
+           <!-- individual Project -->
+          <div class=" mx-auto h-auto flex flex-col lg:w-96 lg:h-96 rounded-3xl cursor-pointer relative" @mouseenter="toggle">
+            <img class=" w-full" src="~/assets/images/Rectangle 6.png" alt="projects">
+            <transition name="caption">
+            <div class=" h-full w-full bg-pryColor rounded-3xl bg-opacity-80 pt-48 lg:pt-60 pl-10 absolute"
+                 v-if="load"
+                 @mouseleave="toggleOut"
+                 :class="myText" >
+              <h1 class="text-2xl md:text-3xl font-semibold">Handy Man</h1>
+              <p>An in-demand Service App</p>
+              <p class=" text-xl md:text-2xl font-medium pt-6 md:pt-8" >UI/UX - Mobile App Design</p>
+            </div>
+            </transition>
           </div>
+          <!-- individual Project Ends -->
+
         </div>
 
         <div class="flex justify-between mx-auto items-center h-32 w-32 cursor-pointer">
@@ -168,7 +246,7 @@
             </div>
 
             <div>
-              <Form class="" />
+              <Form />
             </div>
           </div>
         </div>
@@ -185,11 +263,14 @@ import Typewriter from '../components/UI/Typewriter';
 import Form from '~/components/UI/Form';
 import Preloader from '../components/UI/Preloader.vue';
 export default {
+  transitions: 'caption',
+
   data(){
     return{
       greetings:'<Hello there!/>',
       title: "Gideon Ogunkola | UX Designer | Frontend Developer",
-      show: false
+      show: false,
+      load: false,
     }
   },
   
@@ -230,10 +311,14 @@ export default {
     },
     finish(){
       this.show = false
+    },
+    toggle(){
+      this.load = true
+    },
+    toggleOut(){
+      this.load = false
     }
-  },
-
-  
+  },  
   }
 </script>
 
@@ -241,5 +326,13 @@ export default {
 <style>
 .common {
 @apply pt-28 text-3xl leading-tight md:text-4xl lg:text-4xl font-bold md:leading-none text-center xl:pt-36
+}
+.caption-enter-active,
+.caption-leave-active {
+  transition: opacity 1s;
+}
+.caption-enter,
+.caption-leave-to {
+  opacity: 0;
 }
 </style>
