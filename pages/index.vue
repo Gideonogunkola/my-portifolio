@@ -257,11 +257,6 @@
 </template>
 
 <script> 
-import BtnPry from '~/components/UI/BtnPry';
-import BtnSec from '~/components/UI/BtnSec';
-import Typewriter from '../components/UI/Typewriter';
-import Form from '~/components/UI/Form';
-import Preloader from '../components/UI/Preloader.vue';
 export default {
   transitions: 'caption',
 
@@ -274,13 +269,6 @@ export default {
     }
   },
   
-  components:{
-    BtnPry,
-    BtnSec,
-    Typewriter,
-    Form,
-    Preloader,
-  },
 
   head() {
       return {
@@ -323,7 +311,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 .common {
 @apply pt-28 text-3xl leading-tight md:text-4xl lg:text-4xl font-bold md:leading-none text-center xl:pt-36
 }

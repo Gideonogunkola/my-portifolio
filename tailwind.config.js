@@ -37,6 +37,7 @@ module.exports = {
        height: {
         normal: '4.6rem',
         sub: '4.3rem',
+        high: '95%'
        }
     },
   },

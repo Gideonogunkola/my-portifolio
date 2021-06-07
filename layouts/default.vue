@@ -7,13 +7,9 @@
 </template>
 
 <script>
-import Header from '~/components/Navigation/Header';
-import Footer from '~/components/Navigation/Footer'
+
 export default {
-  components:{
-    Header,
-    Footer,
-  },
+ 
    computed:{
         background(){
           if(this.$colorMode.preference === 'dark' ){

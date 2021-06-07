@@ -32,7 +32,12 @@ export default {
     // can adjust speeds based on other factors if needed
     TYPE_SPEED() { return this.speed } ,
     DELETE_SPEED(){ return this.deleteSpeed },
-    timeoutSpeed() { return this.TYPE_SPEED * 0.8 },
+    timeoutSpeed:{
+      get(){
+         return this.TYPE_SPEED * 0.8
+      }
+    },
+    // timeoutSpeed() { return this.TYPE_SPEED * 0.8 },
   },
   mounted() {
     this.start();

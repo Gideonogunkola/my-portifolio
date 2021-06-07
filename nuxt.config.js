@@ -1,4 +1,7 @@
 export default {
+
+  mode:'universal',
+  
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Gideon Ogunkola | UX Designer | Frontend Developer',
@@ -19,8 +22,14 @@ export default {
     ],
   },
 
+  loadingIndicator:{
+    name: 'circle',
+    color: '#000',
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/css/main.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -35,14 +44,20 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxt/content'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+
+  // transition:{
+  //   name:'page',
+  //   mode:'in'
+  // }
 }
