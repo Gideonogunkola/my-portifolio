@@ -1,5 +1,5 @@
   <template>
-  <div class="w-11/12 md:w-4/5 mx-auto text-base md:text-xl">
+  <div class="w-11/12 md:w-4/5 mx-auto text-xl md:text-2xl">
     <div>
       <!-- Preloader Begins -->
       <!-- <Preloader v-if="show" /> -->
@@ -22,8 +22,8 @@
               />
 
               <p class="pt-6 w-11/12 leading-9">
-                I'm a UX Designer with frontend development expertise who loves
-                building products which solve real-time problems through
+                I'm a UX Designer and Frontend Developer who
+                builds products that solve real-time problems through
                 user-centric design.
               </p>
 
@@ -50,7 +50,7 @@
           >
             <img
               class="lg:h-4/5 w-auto"
-              src="@/assets/images/gideon.png"
+              src="@/assets/images/Gideon Ogunkola 1.png"
               alt="Gideon Ogunkola"
             />
           </div>

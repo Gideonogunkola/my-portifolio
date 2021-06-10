@@ -15,7 +15,7 @@
                         <div class="bg-white w-6 h-6 md:w-7 md:h-7 rounded-full shadow-md transform duration-500 ease-in-out cursor-pointer" 
                         :class="{ 'translate-x-8 md:translate-x-7': toggleActive,}"></div>
                     </div>   
-                    <p class="text-base md:text-xl pl-2"> Dark Mode </p>  
+                    <p class="text-xl md:text-xl pl-2"> Dark Mode </p>  
                 </div>
         
                 <div class="flex items-center" @click="navbar">
@@ -52,10 +52,10 @@ export default {
   },
   computed:{
       imageUrl(){
-          if(this.$colorMode.preference === 'dark' ){
-             return  require(`~/assets/images/logo2.svg`) 
+          if(this.$colorMode.preference === 'light' ){
+             return  require(`~/assets/images/logo.svg`) 
           }else{
-              return require(`~/assets/images/logo.svg`) 
+              return require(`~/assets/images/logo2.svg`) 
           }
       },
       myShadow(){

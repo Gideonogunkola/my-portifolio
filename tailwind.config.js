@@ -14,7 +14,7 @@ module.exports = {
       },
       fontSize: {
         normal: ['1.3rem', '20px'],
-        h1: ['3.5rem', ''],
+        h1: ['3.6rem', ''],
       },
       colors: {
         pryColor: {
