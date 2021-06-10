@@ -25,10 +25,10 @@
 export default {
      computed:{
       customBorderColor(){
-          if(this.$colorMode.preference === 'dark' ){
-             return  "border-white"
+          if(this.$colorMode.preference === 'light' ){
+             return  "border-secColor"
           }else{
-              return "border-secColor"
+              return "border-white"
           }
       },
        myText(){

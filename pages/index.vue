@@ -28,7 +28,7 @@
               </p>
 
               <div class="flex pt-8">
-                <BtnPry text=" See my works" href="/projects" />
+                <BtnPry text=" My Works" href="/projects" />
                 <BtnSec
                   text=" Let's talk"
                   href="/contact"

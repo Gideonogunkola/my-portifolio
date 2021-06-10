@@ -8,14 +8,14 @@
             </div>
             <div class="flex items-center justify-between w-2/3 md:w-2/4 lg:w-2/4 xl:w-1/4">
                 <div class="flex items-center">
-                    <div class="w-16 h-8 md:h-9 flex items-center bg-pryColor-light rounded-full p-1 duration-500 ease-in-out cursor-pointer"
+                    <div class="w-12 h-4 md:w-14 md:h-4 flex items-center bg-gray-300 rounded-full duration-500 ease-in-out cursor-pointer"
                          @click=" toggle"
-                         :class="{ 'bg-pryColor': toggleActive,}">
+                         :class="{ 'bg-gray-500': toggleActive,}">
                         <!-- Switch -->
-                        <div class="bg-white w-6 h-6 md:w-7 md:h-7 rounded-full shadow-md transform duration-500 ease-in-out cursor-pointer" 
-                        :class="{ 'translate-x-8 md:translate-x-7': toggleActive,}"></div>
+                        <div class="bg-pryColor w-6 h-6 md:w-7 md:h-7 rounded-full shadow-md transform duration-500 ease-in-out cursor-pointer" 
+                        :class="{ 'translate-x-6 md:translate-x-7': toggleActive,}"></div>
                     </div>   
-                    <p class="text-xl md:text-xl pl-2"> Dark Mode </p>  
+                    <p class="text-xl md:text-xl pl-2"> Mode </p>  
                 </div>
         
                 <div class="flex items-center" @click="navbar">
