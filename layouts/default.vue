@@ -53,5 +53,7 @@ body{
   background: #08A0DF;
   border-radius: 5px;
 }
-
+.typewriter-msg{
+  color:#27AAE1;
+}
 </style>

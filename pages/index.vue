@@ -1,4 +1,4 @@
-  <template>
+<template>
   <div class="w-11/12 md:w-4/5 mx-auto text-xl md:text-2xl">
     <div>
       <!-- Preloader Begins -->
@@ -10,21 +10,24 @@
           <div class="h-full flex items-center justify-center pt-44 lg:pt-24">
             <div>
               <div class="flex items-center justify-start">
-                <p>{{ greetings }} 👋</p>
+                <p>
+                  <code>{{ greetings }}</code> 👋
+                </p>
               </div>
-
-              <Typewriter
-                :words="[
-                  'UX Designer',
-                  'Frontend Developer',
-                  'Visual Designer',
-                ]"
-              />
-
+              <div class="pt-8 text-3xl leading-tight md:text-6xl  lg:text-5xl xl:text-h1 font-bold md:leading-none">
+                <typewriter
+                :speed="200"
+                :full-erase="true"
+                :start-delay="300"
+                :words="['UX Designer', 'Frontend Engineer', 'Visual Designer']"
+                :erase-delay="300"
+              >
+                I'm Gideon Ogunkola, <br> A
+              </typewriter>
+              </div>
               <p class="pt-6 w-11/12 leading-9">
-                I'm a UX Designer and Frontend Developer who
-                builds products that solve real-time problems through
-                user-centric design.
+                I'm a UX Designer and Frontend Developer who builds products
+                that solve real-time problems through user-centric design.
               </p>
 
               <div class="flex pt-8">
@@ -67,12 +70,12 @@
 
         <div class="grid gap-14 grid-col-1 md:grid-cols-2 xl:grid-cols-3">
           <!-- individual Project -->
-            <div v-for="(project, index) in projects" :key="index">
-              <nuxt-link
-                :to="{ name: 'projects-slug', params: { slug: project.slug } }"
-              >
-                <div
-                  class="
+          <div v-for="(project, index) in projects" :key="index">
+            <nuxt-link
+              :to="{ name: 'projects-slug', params: { slug: project.slug } }"
+            >
+              <div
+                class="
                     mx-auto
                     h-auto
                     flex flex-col
@@ -82,24 +85,24 @@
                     cursor-pointer
                     parent
                   "
-                >
-                  <img
-                    class="w-full"
-                    :src="require(`~/assets/images/${project.img}`)"
-                    alt="project-image"
-                  />
-                  <div class="child">
-                    <h1 class="text-2xl md:text-3xl font-semibold">
-                      {{ project.title }}
-                    </h1>
-                    <p>{{ project.description }}</p>
-                    <p class="text-xl md:text-2xl font-medium pt-6 md:pt-8">
-                      {{ project.category }}
-                    </p>
-                  </div>
+              >
+                <img
+                  class="w-full"
+                  :src="require(`~/assets/images/${project.img}`)"
+                  alt="project-image"
+                />
+                <div class="child">
+                  <h1 class="text-2xl md:text-3xl font-semibold">
+                    {{ project.title }}
+                  </h1>
+                  <p>{{ project.description }}</p>
+                  <p class="text-xl md:text-2xl font-medium pt-6 md:pt-8">
+                    {{ project.category }}
+                  </p>
                 </div>
-                <div
-                  class="
+              </div>
+              <div
+                class="
                     w-full
                     pb-8
                     pl-8
@@ -109,17 +112,17 @@
                     rounded-b-3xl
                     -mt-6
                   "
-                  :class="myShadow"
-                >
-                  <h1 class="text-2xl md:text-3xl font-semibold">
-                    {{ project.title }}
-                  </h1>
-                  <p>{{ project.description }}</p>
-                  <p class="text-xl md:text-2xl font-medium pt-6 md:pt-8">
-                    {{ project.category }}
-                  </p>
-                </div>
-              </nuxt-link>
+                :class="myShadow"
+              >
+                <h1 class="text-2xl md:text-3xl font-semibold">
+                  {{ project.title }}
+                </h1>
+                <p>{{ project.description }}</p>
+                <p class="text-xl md:text-2xl font-medium pt-6 md:pt-8">
+                  {{ project.category }}
+                </p>
+              </div>
+            </nuxt-link>
           </div>
           <!-- individual Project Ends -->
         </div>
@@ -131,7 +134,7 @@
             mx-auto
             items-center
             h-32
-            w-32
+            w-36
             cursor-pointer
           "
         >
@@ -163,7 +166,7 @@
               class="
                 border-2
                 h-72
-                w-52
+                w-60
                 border-blue-500
                 rounded-3xl
                 flex
@@ -183,7 +186,7 @@
               class="
                 border-2
                 h-72
-                w-52
+                w-60
                 border-green-500
                 rounded-3xl
                 flex
@@ -203,7 +206,7 @@
               class="
                 border-2
                 h-72
-                w-52
+                w-60
                 border-yellow-500
                 rounded-3xl
                 flex
@@ -223,7 +226,7 @@
               class="
                 border-2
                 h-72
-                w-52
+                w-60
                 border-purple-500
                 rounded-3xl
                 flex
@@ -243,7 +246,7 @@
               class="
                 border-2
                 h-72
-                w-52
+                w-60
                 border-red-500
                 rounded-3xl
                 flex
@@ -300,7 +303,7 @@
                     data-inline="false"
                   ></span>
                 </div>
-                <p class="pl-6">me@gideonogunkola.com</p>
+                <p class="pl-1 md:pl-4">me@gideonogunkola.com</p>
               </div>
               <div class="flex items-center pb-6 md:pb-10">
                 <div
@@ -323,7 +326,7 @@
                     data-inline="false"
                   ></span>
                 </div>
-                <p class="pl-6">ogunkolagideon@gmail.com</p>
+                <p class="pl-1 md:pl-4">ogunkolagideon@gmail.com</p>
               </div>
               <div class="flex items-center pb-6 md:pb-10">
                 <div
@@ -346,7 +349,7 @@
                     data-inline="false"
                   ></span>
                 </div>
-                <p class="pl-6">+234 810 674 4642</p>
+                <p class="pl-1 md:pl-4">+234 810 674 4642</p>
               </div>
             </div>
 
@@ -363,7 +366,7 @@
 
 <script>
 export default {
-   async asyncData({ $content, params }) {
+  async asyncData({ $content, params }) {
     const projects = await $content("projects", params.slug)
       .limit(6)
       .only(["title", "description", "category", "slug", "img"])
@@ -375,7 +378,7 @@ export default {
     return {
       greetings: "<Hello there!/>",
       title: "Gideon Ogunkola | UX Designer | Frontend Developer",
-      load: false,
+      load: false
     };
   },
 
@@ -386,33 +389,30 @@ export default {
         {
           hid: "description",
           name: "UX Designer | Frontend Developer",
-          content:
-            "Gideon is a professional UX Designer and Frontend Developer",
-        },
-      ],
+          content: "Gideon is a professional UX Designer and Frontend Developer"
+        }
+      ]
     };
   },
 
-  computed:{
-    myShadow(){
-          if(this.$colorMode.preference === 'dark' ){
-             return  "shadow-now bg-blue" 
-          }else{
-              return "shadow-md" 
-          }
-
-      },
-    myText(){
-          if(this.$colorMode.preference === 'dark' ){
-             return  "text-secColor" 
-          }else{
-              return "text-white" 
-          }
-      },
+  computed: {
+    myShadow() {
+      if (this.$colorMode.preference === "dark") {
+        return "shadow-now bg-blue";
+      } else {
+        return "shadow-md";
+      }
+    },
+    myText() {
+      if (this.$colorMode.preference === "dark") {
+        return "text-secColor";
+      } else {
+        return "text-white";
+      }
+    }
   }
 };
 </script>
-
 
 <style scoped>
 .common {
@@ -426,22 +426,22 @@ export default {
 .caption-leave-to {
   opacity: 0;
 }
- .parent{
+.parent {
   position: relative;
 }
-.parent::after{
-  content: '';
+.parent::after {
+  content: "";
   position: absolute;
   height: 100%;
-  width:100%;
-  top:0;
-  left:0;
+  width: 100%;
+  top: 0;
+  left: 0;
   background-color: #27a9e1cb;
-  opacity:0;
-  border-radius: 1.5rem ;
+  opacity: 0;
+  border-radius: 1.5rem;
   transition: all 500ms ease-out;
 }
-.child{
+.child {
   position: absolute;
   bottom: 3.5rem;
   left: 2.5rem;
@@ -449,7 +449,8 @@ export default {
   z-index: 9;
 }
 .parent:hover::after,
-.parent:hover .child{
+.parent:hover .child {
   opacity: 1;
 }
+
 </style>

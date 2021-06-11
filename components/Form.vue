@@ -44,11 +44,11 @@ export default {
 
 <style scoped>
   .common {
-        @apply  text-base md:text-xl px-6 lg:px-16 mb-6 py-3 h-20 w-full rounded-3xl 
+        @apply  text-xl md:text-2xl px-6 lg:px-16 mb-6 py-3 h-20 w-full rounded-3xl 
                 bg-transparent border-2 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-pryColor
 }
 .common1{
-        @apply  text-base md:text-xl px-6 lg:px-16 mb-6 py-3 h-40 w-full rounded-3xl 
+        @apply  text-xl md:text-2xl px-6 lg:px-16 mb-6 py-3 h-40 w-full rounded-3xl 
                 bg-transparent border-2 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-pryColor
 }
 .common2{

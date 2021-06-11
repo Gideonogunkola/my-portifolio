@@ -1,5 +1,5 @@
 <template>
-    <div class="w-11/12 md:w-4/5 mx-auto text-base md:text-xl mt-24">
+    <div class="w-11/12 md:w-4/5 mx-auto text-xl md:text-2xl mt-24">
          <section class="contact">
         <div>
           <div class="title">

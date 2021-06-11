@@ -2,7 +2,8 @@
 <div class="h-52 mt-12 lg:mt-24 w-full bg-secColor text-white leading-9">
     <div class="grid grid-cols-1 lg:grid-cols-2 w-11/12 md:w-4/5 m-auto content-center h-full">
         <div>
-            <p class="text-center lg:text-left">© Copyright 2021. All right reserved</p>
+            <p class=" hidden lg:block text-center lg:text-left">© Copyright 2021. Designed and developed by me</p>
+             <p class=" lg:hidden text-center lg:text-left">© Copyright 2021.<br> Designed and developed by me</p>
         </div>
         <div class="flex h-full items-center justify-self-center lg:justify-self-end mt-6 lg:mt-0 ">
             <div>
