@@ -50,7 +50,9 @@ export default {
   modules: ["@nuxt/content"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {
+    transpile: ['emailjs-com']
+  }
 
   // transition:{
   //   name:'page',

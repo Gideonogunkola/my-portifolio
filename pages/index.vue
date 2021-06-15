@@ -354,7 +354,7 @@
             </div>
 
             <div>
-              <Form />
+              <Form></Form>
             </div>
           </div>
         </div>
@@ -365,7 +365,11 @@
 </template>
 
 <script>
+import Form from "@/components/Form.vue";
 export default {
+  components: {
+    Form
+  },
   async asyncData({ $content, params }) {
     const projects = await $content("projects", params.slug)
       .limit(6)
