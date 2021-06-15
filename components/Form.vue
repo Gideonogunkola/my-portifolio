@@ -109,7 +109,7 @@ export default {
           setTimeout(() => (this.alertMessage = null), 3000);
         } catch (error) {
           console.log("Failed", error);
-          this.alertMessage = "Failed! Please try again.";
+          this.alertMessage = "Failed! check your network and try again.";
           this.actionMsg = "send";
           this.isError = true;
           this.isSuccesss = false;

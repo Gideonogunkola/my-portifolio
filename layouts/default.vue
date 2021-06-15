@@ -2,7 +2,7 @@
   <div class="text-base md:text-xl">
     <Header  :class="background" />
     <Nuxt class="" />
-    <Footer />
+    <Footer class="mt-24" />
   </div>
 </template>
 
