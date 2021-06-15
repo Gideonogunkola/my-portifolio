@@ -17,13 +17,13 @@
             <button class="common2 h-16 lg:h-normal" :class="myText">{{ actionMsg }}</button>
         </div>
     </form>
-    <p v-if="alertMessage" class="absolute pt-6">{{ alertMessage }}</p>
+    <p v-if="alertMessage" v-html="alertMessage" class="absolute pt-6 " :class="{ 'text-green-600': isSuccesss, 'text-red-600': isError }"></p>
 </div>
  
 </template>
 
 <script>
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 export default {
     data(){
         return{
@@ -31,7 +31,9 @@ export default {
             email:'',
             message:'',
             alertMessage: null,
-            actionMsg: 'send'
+            actionMsg: 'send',
+            isError: false,
+            isSuccesss: false,
         }
     },
 
@@ -55,9 +57,10 @@ export default {
     methods: {
             
             sendEmail(e) {  
-                this.actionMsg = 'Sending...'
-            emailjs.sendForm('service_affn4zn', 'template_hf1xe0a', e.target, 'user_5kNfrpVcBTOQaxxsAxwXT')
-            .then((result) => {
+                if(this.name && this.email && this.message){
+                                    this.actionMsg = 'Sending...'
+                emailjs.sendForm('service_affn4zn', 'template_hf1xe0a', e.target, 'user_5kNfrpVcBTOQaxxsAxwXT')
+                .then((result) => {
                 console.log('SUCCESS!', result.status, result.text);
                 //reset email
                 this.name = '',
@@ -65,16 +68,28 @@ export default {
                 this.message ='',
                 this.alertMessage = 'Successful! Your message has been sent.'
                 this.actionMsg = 'send'
+                this.isSuccesss = true
+                this.isError = false
 
                 //timeout
                 setTimeout(() => this.alertMessage = null ,3000)
-            }).catch((error) => {
+             }).catch((error) => {
                     console.log('Failed', error);
                     this.alertMessage = 'Failed! Please try again.'
                     this.actionMsg = 'send'
+                    this.isError = true
+                    this.isSuccesss = false
                     //timeout
                     setTimeout(() => this.alertMessage = null ,3000)
                 });
+
+                }else{
+                    this.isError = true
+                    this.alertMessage = ' Check your inputs and try again. <br> (All fields are required)'
+                    //timeout
+                    setTimeout(() => this.alertMessage = null ,3000)
+                
+                }
         }
 
 

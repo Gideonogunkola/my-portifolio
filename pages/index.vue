@@ -17,7 +17,7 @@
               <div class="pt-8 text-3xl leading-tight md:text-6xl  lg:text-5xl xl:text-h1 font-bold md:leading-none">
                 <typewriter
                 :speed="200"
-                :full-erase="true"
+                :full-erase="false"
                 :start-delay="200"
                 :words="['UX Designer.', 'Frontend Engineer.', 'Visual Designer.']"
                 :erase-delay="300"
