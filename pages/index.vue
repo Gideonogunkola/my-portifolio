@@ -18,8 +18,8 @@
                 <typewriter
                 :speed="200"
                 :full-erase="true"
-                :start-delay="300"
-                :words="['UX Designer', 'Frontend Engineer', 'Visual Designer']"
+                :start-delay="200"
+                :words="['UX Designer.', 'Frontend Engineer.', 'Visual Designer.']"
                 :erase-delay="300"
               >
                 I'm Gideon Ogunkola, <br> A
@@ -377,7 +377,7 @@ export default {
   data() {
     return {
       greetings: "<Hello there!/>",
-      title: "Gideon Ogunkola | UX Designer | Frontend Developer",
+      title: "Gideon Ogunkola. | UX Designer | Frontend Developer",
       load: false
     };
   },

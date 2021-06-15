@@ -1,44 +1,103 @@
 <template>
 <div>
-   <form @submit.prevent="">
+   <form @submit.prevent="sendEmail" class="relative">
         <div>
          <input type="text" placeholder="Full Name" class=" form-input common" 
-                :class="customBorderColor">
+                :class="customBorderColor" name="name" v-model="name">
         </div>
         <div>
          <input type="email" placeholder="Email Address" class=" form-input common" 
-                :class="customBorderColor">
+                :class="customBorderColor" name="email" v-model="email">
         </div>
         <div>
             <textarea class="common1 form-textarea" placeholder="Message" cols="30" rows="10"
-                  :class="customBorderColor"></textarea>
+                  :class="customBorderColor" name="message" v-model="message"></textarea>
         </div>
         <div>
-            <button class="common2 h-16 lg:h-normal" :class="myText">Submit</button>
+            <button class="common2 h-16 lg:h-normal" :class="myText">{{ actionMsg }}</button>
         </div>
     </form>
+    <p v-if="alertMessage" class="absolute pt-6">{{ alertMessage }}</p>
 </div>
  
 </template>
 
 <script>
+import emailjs from 'emailjs-com';
 export default {
-     computed:{
-      customBorderColor(){
-          if(this.$colorMode.preference === 'light' ){
-             return  "border-secColor"
-          }else{
-              return "border-white"
-          }
-      },
-       myText(){
-          if(this.$colorMode.preference === 'dark' ){
-             return  "text-secColor" 
-          }else{
-              return "text-white" 
-          }
-      }
-  },
+    data(){
+        return{
+            name:'',
+            email:'',
+            message:'',
+            alertMessage: null,
+            actionMsg: 'send'
+        }
+    },
+
+    computed:{
+            customBorderColor(){
+                if(this.$colorMode.preference === 'light' ){
+                    return  "border-secColor"
+                }else{
+                    return "border-white"
+                }
+            },
+            myText(){
+                if(this.$colorMode.preference === 'dark' ){
+                    return  "text-secColor" 
+                }else{
+                    return "text-white" 
+                }
+            }
+         },
+
+    methods: {
+            
+            sendEmail(e) {  
+                this.actionMsg = 'Sending...'
+            emailjs.sendForm('service_affn4zn', 'template_hf1xe0a', e.target, 'user_5kNfrpVcBTOQaxxsAxwXT')
+            .then((result) => {
+                console.log('SUCCESS!', result.status, result.text);
+                //reset email
+                this.name = '',
+                this.email = '',
+                this.message ='',
+                this.alertMessage = 'Successful! Your message has been sent.'
+                this.actionMsg = 'send'
+
+                //timeout
+                setTimeout(() => this.alertMessage = null ,3000)
+            }).catch((error) => {
+                    console.log('Failed', error);
+                    this.alertMessage = 'Failed! Please try again.'
+                    this.actionMsg = 'send'
+                    //timeout
+                    setTimeout(() => this.alertMessage = null ,3000)
+                });
+        }
+
+
+        // sendEmail(e) {
+        //     try {
+        //         emailjs.sendForm('service_affn4z', 'template_hf1xe0a', e.target, 'user_5kNfrpVcBTOQaxxsAxwXT', {
+        //         name: this.name,
+        //         email: this.email,
+        //         message: this.meessage
+        //         })
+        //         this.action = 'sending...'
+        //         this.alertMessage = 'Message sent sucessfully'
+        //         setTimeout(() => this.alertMessage = null,
+        //         3000)
+        //     } catch (error) {
+        //         console.log({error})
+        //     }
+        //     // Reset form field
+        //     this.name = ''
+        //     this.email = ''
+        //     this.message = ''
+        //     },
+        },
 }
 </script>
 
