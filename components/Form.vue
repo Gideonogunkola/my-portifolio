@@ -41,8 +41,8 @@
     <p
       v-if="alertMessage"
       v-html="alertMessage"
-      class="absolute pt-6"
-      :class="{ 'text-green-600': isSuccesss, 'text-red-600': isError }"
+      class="absolute mt-4"
+      :class="{ customColor2: isSuccesss, customColor: isError }"
     ></p>
   </div>
 </template>
@@ -51,7 +51,7 @@
 import emailjs from "emailjs-com";
 
 export default {
-    name: "messageForm",
+  name: "messageForm",
   data() {
     return {
       name: "",
@@ -60,7 +60,7 @@ export default {
       alertMessage: null,
       actionMsg: "send",
       isError: false,
-      isSuccesss: false,
+      isSuccesss: false
     };
   },
   computed: {
@@ -77,7 +77,7 @@ export default {
       } else {
         return "text-white";
       }
-    },
+    }
   },
 
   methods: {
@@ -92,9 +92,9 @@ export default {
             e.target,
             "user_5kNfrpVcBTOQaxxsAxwXT"
           );
-          console.log(result);
+          // console.log(result);
 
-          console.log("SUCCESS!", result.status, result.text);
+          // console.log("SUCCESS!", result.status, result.text);
 
           //reset email
           (this.name = ""),
@@ -123,7 +123,7 @@ export default {
         //timeout
         setTimeout(() => (this.alertMessage = null), 3000);
       }
-    },
+    }
 
     // sendEmail(e) {
     //     try {
@@ -144,17 +144,17 @@ export default {
     //     this.email = ''
     //     this.message = ''
     //     },
-  },
+  }
 };
 </script>
 
 <style scoped>
 .common {
-  @apply text-xl md:text-2xl px-6 lg:px-16 mb-6 py-3 h-20 w-full rounded-3xl 
+  @apply text-xl md:text-2xl px-6 lg:px-10 mb-6 py-3 h-20 w-full rounded-3xl 
                 bg-transparent border-2 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-pryColor;
 }
 .common1 {
-  @apply text-xl md:text-2xl px-6 lg:px-16 mb-6 py-3 h-40 w-full rounded-3xl 
+  @apply text-xl md:text-2xl px-6 lg:px-10 mb-6 py-3 h-40 w-full rounded-3xl 
                 bg-transparent border-2 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-pryColor;
 }
 .common2 {
@@ -167,5 +167,11 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out inset";
   -webkit-transition-delay: 9999s;
+}
+.customColor {
+  @apply text-red-600 bg-red-300 bg-opacity-30 p-2 rounded-xl border-red-600 border-2;
+}
+.customColor2 {
+  @apply text-green-600 bg-green-300 bg-opacity-30 p-2 rounded-xl border-green-600 border-2;
 }
 </style>

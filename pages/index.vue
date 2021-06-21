@@ -1,5 +1,5 @@
 <template>
-  <div class="w-11/12 md:w-4/5 mx-auto text-xl md:text-2xl">
+  <div class="w-11/12 xl:w-4/5 mx-auto text-xl md:text-2xl">
     <div>
       <!-- Preloader Begins -->
       <!-- <Preloader v-if="show" /> -->
@@ -14,19 +14,26 @@
                   <code>{{ greetings }}</code> 👋
                 </p>
               </div>
-              <div class="pt-8 text-3xl leading-tight md:text-6xl  lg:text-5xl xl:text-h1 font-bold md:leading-none">
-                <typewriter
-                :speed="200"
-                :full-erase="false"
-                :start-delay="200"
-                :words="['UX Designer.', 'Frontend Engineer.', 'Visual Designer.']"
-                :erase-delay="300"
+              <div
+                class="pt-8 text-3xl leading-tight md:text-6xl lg:text-5xl xl:text-h1 font-bold md:leading-none"
               >
-                I'm Gideon Ogunkola, <br> A
-              </typewriter>
+                <typewriter
+                  :speed="200"
+                  :full-erase="false"
+                  :start-delay="200"
+                  :words="[
+                    'UX Designer',
+                    'Frontend Engineer',
+                    'Visual Designer'
+                  ]"
+                  :erase-delay="300"
+                >
+                  I'm Gideon Ogunkola, <br />
+                  A
+                </typewriter>
               </div>
               <p class="pt-6 w-11/12 leading-9">
-                I'm a UX Designer and Frontend Developer who builds products
+                I'm a UX designer and frontend developer who builds products
                 that solve real-time problems through user-centric design.
               </p>
 
@@ -68,7 +75,7 @@
           <p class="text-center pt-4 pb-12 lg:pb-24">Some selected projects</p>
         </div>
 
-        <div class="grid gap-14 grid-col-1 md:grid-cols-2 xl:grid-cols-3">
+        <div class="grid gap-14 grid-col-1 md:grid-cols-2 lg:grid-cols-3">
           <!-- individual Project -->
           <div v-for="(project, index) in projects" :key="index">
             <nuxt-link
@@ -79,8 +86,10 @@
                     mx-auto
                     h-auto
                     flex flex-col
-                    lg:w-96
-                    lg:h-96
+                    lg:w-80
+                    lg:h-80
+                    xl:w-96
+                    xl:h-96
                     rounded-3xl
                     cursor-pointer
                     parent
@@ -456,5 +465,4 @@ export default {
 .parent:hover .child {
   opacity: 1;
 }
-
 </style>
