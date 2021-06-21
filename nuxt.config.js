@@ -19,13 +19,13 @@ export default {
       }
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        rel: "stylesheet",
-        type: "text/css",
-        href:
-          "//db.onlinewebfonts.com/c/22e08e9cd2a72d3d02589e3033a3178e?family=Begum"
-      }
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
+      // {
+      //   rel: "stylesheet",
+      //   type: "text/css",
+      //   href:
+      //     "//db.onlinewebfonts.com/c/22e08e9cd2a72d3d02589e3033a3178e?family=Begum"
+      // }
     ],
     script: [{ src: "https://code.iconify.design/1/1.0.7/iconify.min.js" }]
   },

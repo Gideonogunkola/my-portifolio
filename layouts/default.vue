@@ -1,43 +1,46 @@
 <template>
   <div class="text-base md:text-xl">
-    <Header  :class="background" />
+    <Header :class="background" />
     <Nuxt class="" />
     <Footer class="mt-24" />
   </div>
 </template>
 
 <script>
-
 export default {
- 
-   computed:{
-        background(){
-          if(this.$colorMode.preference === 'dark' ){
-             return  "bg-secColor" 
-          }else{
-              return "bg-white" 
-          }
+  computed: {
+    background() {
+      if (this.$colorMode.preference === "dark") {
+        return "bg-secColor";
+      } else {
+        return "bg-white";
       }
-    },
-}
+    }
+  }
+};
 </script>
 
 <style>
-html {
-  font-family:'begum', serif;
+@font-face {
+  font-family: "begum";
+  src: url("~/assets/css/begum.woff") format("woff1"),
+    url("~/assets/css/begum.woff2") format("woff2");
 }
-body{
+html {
+  font-family: "begum", serif;
+}
+body {
   margin: 0;
 }
 .dark-mode {
-        @apply text-white bg-secColor;
-    }
+  @apply text-white bg-secColor;
+}
 
 .light-mode {
-        @apply text-secColor bg-white;
-    }
+  @apply text-secColor bg-white;
+}
 
-  /* width */
+/* width */
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -50,10 +53,10 @@ body{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #08A0DF;
+  background: #08a0df;
   border-radius: 5px;
 }
-.typewriter-msg{
-  color:#27AAE1;
+.typewriter-msg {
+  color: #27aae1;
 }
 </style>

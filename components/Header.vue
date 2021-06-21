@@ -95,7 +95,7 @@ export default {
     toggle() {
       this.toggleActive = !this.toggleActive;
       this.$colorMode.preference =
-        this.$colorMode.preference === "dark" ? "light" : "dark";
+        this.$colorMode.preference === "light" ? "dark" : "light";
       this.displayMenu = false;
     },
     navbar() {
