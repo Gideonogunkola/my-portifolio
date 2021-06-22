@@ -1,10 +1,11 @@
 <template>
-    <div>
-        <nuxt-link   :to="href">  
+    <div>  
+        <a  target="_blank" :href="href">
             <div class="h-16 w-36 lg:h-normal md:w-44 lg:w-48 rounded-3xl bg-pryColor flex justify-center items-center cursor-pointer " :class="myText">
                 {{text}}
             </div> 
-         </nuxt-link>    
+        </a> 
+        
     </div>
 </template>
 
