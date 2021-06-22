@@ -72,7 +72,7 @@
       <section class="projects mt-100 lg:mt-0 sm:mt-200">
         <div class="title lg:pt-16">
           <h1 class="common">My Works</h1>
-          <p class="text-center pt-4 pb-12 lg:pb-24">Some selected projects</p>
+          <p class="text-center pt-4 pb-10 lg:pb-24">Some selected projects</p>
         </div>
 
         <div class="grid gap-14 grid-col-1 md:grid-cols-2 lg:grid-cols-3">
@@ -100,7 +100,7 @@
                   :src="require(`~/assets/images/${project.img}`)"
                   alt="project-image"
                 />
-                <div class="child">
+                <div class="child hidden lg:block">
                   <h1 class="text-2xl md:text-3xl font-semibold">
                     {{ project.title }}
                   </h1>
@@ -374,11 +374,7 @@
 </template>
 
 <script>
-import Form from "@/components/Form.vue";
 export default {
-  components: {
-    Form
-  },
   async asyncData({ $content, params }) {
     const projects = await $content("projects", params.slug)
       .limit(6)
@@ -439,30 +435,33 @@ export default {
 .caption-leave-to {
   opacity: 0;
 }
-.parent {
-  position: relative;
-}
-.parent::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #27a9e1cb;
-  opacity: 0;
-  border-radius: 1.5rem;
-  transition: all 500ms ease-out;
-}
-.child {
-  position: absolute;
-  bottom: 3.5rem;
-  left: 2.5rem;
-  opacity: 0;
-  z-index: 9;
-}
-.parent:hover::after,
-.parent:hover .child {
-  opacity: 1;
+
+@media screen and (min-width: 1000px) {
+  .parent {
+    position: relative;
+  }
+  .parent::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #27a9e1cb;
+    opacity: 0;
+    border-radius: 1.5rem;
+    transition: all 500ms ease-out;
+  }
+  .child {
+    position: absolute;
+    bottom: 3.5rem;
+    left: 2.5rem;
+    opacity: 0;
+    z-index: 9;
+  }
+  .parent:hover::after,
+  .parent:hover .child {
+    opacity: 1;
+  }
 }
 </style>

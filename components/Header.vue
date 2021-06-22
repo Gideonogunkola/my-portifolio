@@ -4,7 +4,7 @@
       class="w-11/12 xl:w-4/5 m-auto h-24 flex justify-between items-center "
     >
       <div>
-        <nuxt-link to="/">
+        <nuxt-link to="/" class="">
           <img :src="imageUrl" alt="logo" />
         </nuxt-link>
       </div>

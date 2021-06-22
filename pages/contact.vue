@@ -25,7 +25,7 @@
                   data-inline="false"
                 ></span>
               </div>
-              <p class="pl-6 md:pl-4">me@gideonogunkola.com</p>
+              <p class="pl-1 md:pl-4">me@gideonogunkola.com</p>
             </div>
             <div class="flex items-center pb-6 md:pb-10">
               <div
@@ -38,7 +38,7 @@
                   data-inline="false"
                 ></span>
               </div>
-              <p class="pl-6 md:pl-4">ogunkolagideon@gmail.com</p>
+              <p class="pl-1 md:pl-4">ogunkolagideon@gmail.com</p>
             </div>
             <div class="flex items-center pb-6 md:pb-10">
               <div
@@ -51,7 +51,7 @@
                   data-inline="false"
                 ></span>
               </div>
-              <p class="pl-6 md:pl-4">+234 810 674 4642</p>
+              <p class="pl-1 md:pl-4">+234 810 674 4642</p>
             </div>
           </div>
 
