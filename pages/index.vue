@@ -70,94 +70,14 @@
 
       <!--  Project Section Begins  -->
       <section class="projects mt-100 lg:mt-0 sm:mt-200">
-        <div class="title lg:pt-16">
+        <div class="title -pt-10 lg:pt-16">
           <h1 class="common">My Works</h1>
-          <p class="text-center pt-4 pb-10 lg:pb-24">Some selected projects</p>
+          <p class="text-center pt-4 pb-10 lg:pb-12">Some selected projects</p>
         </div>
 
-        <div class="grid gap-14 grid-col-1 md:grid-cols-2 lg:grid-cols-3">
-          <!-- individual Project -->
-          <div v-for="(project, index) in projects" :key="index">
-            <nuxt-link
-              :to="{ name: 'projects-slug', params: { slug: project.slug } }"
-            >
-              <div
-                class="
-                    mx-auto
-                    h-auto
-                    flex flex-col
-                    lg:w-80
-                    lg:h-80
-                    xl:w-96
-                    xl:h-96
-                    rounded-3xl
-                    cursor-pointer
-                    parent
-                  "
-              >
-                <img
-                  class="w-full"
-                  :src="require(`~/assets/images/${project.img}`)"
-                  alt="project-image"
-                />
-                <div class="child hidden lg:block">
-                  <h1 class="text-2xl md:text-3xl font-semibold">
-                    {{ project.title }}
-                  </h1>
-                  <p>{{ project.description }}</p>
-                  <p class="text-xl md:text-2xl font-medium pt-6 md:pt-8">
-                    {{ project.category }}
-                  </p>
-                </div>
-              </div>
-              <div
-                class="
-                    w-full
-                    pb-8
-                    pl-8
-                    pt-14
-                    pr-8
-                    lg:hidden
-                    rounded-b-3xl
-                    -mt-6
-                  "
-                :class="myShadow"
-              >
-                <h1 class="text-2xl md:text-3xl font-semibold">
-                  {{ project.title }}
-                </h1>
-                <p>{{ project.description }}</p>
-                <p class="text-xl md:text-2xl font-medium pt-6 md:pt-8">
-                  {{ project.category }}
-                </p>
-              </div>
-            </nuxt-link>
-          </div>
-          <!-- individual Project Ends -->
-        </div>
-
-        <div
-          class="
-            flex
-            justify-between
-            mx-auto
-            items-center
-            h-32
-            w-36
-            cursor-pointer
-          "
-        >
-          <nuxt-link to="/projects">
-            <p class="text-center">See More</p>
-          </nuxt-link>
-          <nuxt-link to="/projects">
-            <span
-              class="iconify h-8 w-auto"
-              data-icon="bi:arrow-right"
-              data-inline="false"
-            ></span>
-          </nuxt-link>
-        </div>
+        <!-- testing -->
+        <Navbarcontent />
+        <!-- testing -->
       </section>
       <!-- Project Section Ends -->
 
@@ -277,7 +197,7 @@
       <!-- My Process Ends -->
 
       <!-- Contact-section Begins -->
-      <section class="contact">
+      <section class="contact mt-10">
         <div>
           <div class="title">
             <h1 class="common">Let's Talk</h1>
@@ -375,14 +295,6 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const projects = await $content("projects", params.slug)
-      .limit(6)
-      .only(["title", "description", "category", "slug", "img"])
-      .sortBy("CreatedAt", "asc")
-      .fetch();
-    return { projects };
-  },
   data() {
     return {
       greetings: "<Hello there!/>",
@@ -434,34 +346,5 @@ export default {
 .caption-enter,
 .caption-leave-to {
   opacity: 0;
-}
-
-@media screen and (min-width: 1000px) {
-  .parent {
-    position: relative;
-  }
-  .parent::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #27a9e1cb;
-    opacity: 0;
-    border-radius: 1.5rem;
-    transition: all 500ms ease-out;
-  }
-  .child {
-    position: absolute;
-    bottom: 3.5rem;
-    left: 2.5rem;
-    opacity: 0;
-    z-index: 9;
-  }
-  .parent:hover::after,
-  .parent:hover .child {
-    opacity: 1;
-  }
 }
 </style>

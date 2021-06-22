@@ -1,6 +1,8 @@
 <template>
   <div class="w-11/12 md:w-4/5 mx-auto text-base md:text-xl mt-24 lg:mt-24">
-      <div
+
+    <Pnavbarcontent class=" mt-14" />
+      <!-- <div
       class="grid gap-14 grid-col-1 md:grid-cols-2 xl:grid-cols-3 mt-24 pt-14 ">
       <div v-for="(project, index) in projects" :key="index">
         <nuxt-link
@@ -33,36 +35,36 @@
           </div>
         </nuxt-link>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const projects = await $content("projects", params.slug)
-      .only(["title", "description", "category", "slug", "img"])
-      .sortBy("CreatedAt", "desc")
-      .fetch();
-    return { projects };
-  },
+  // async asyncData({ $content, params }) {
+  //   const projects = await $content("projects", params.slug)
+  //     .only(["title", "description", "category", "slug", "img"])
+  //     .sortBy("CreatedAt", "desc")
+  //     .fetch();
+  //   return { projects };
+  // },
 
-  computed:{
-    myShadow(){
-          if(this.$colorMode.preference === 'dark' ){
-             return  "shadow-now bg-blue" 
-          }else{
-              return "shadow-md" 
-          }
-      },
-  }
+  // computed:{
+  //   myShadow(){
+  //         if(this.$colorMode.preference === 'dark' ){
+  //            return  "shadow-now bg-blue" 
+  //         }else{
+  //             return "shadow-md" 
+  //         }
+  //     },
+  // }
 };
 </script>
 
 
 
 <style scoped>
-  .parent{
+  /* .parent{
   position: relative;
 }
 .parent::after{
@@ -87,5 +89,5 @@ export default {
 .parent:hover::after,
 .parent:hover .child{
   opacity: 1;
-}
+} */
 </style>
