@@ -22,9 +22,9 @@
                   :full-erase="false"
                   :start-delay="200"
                   :words="[
-                    'UX Designer',
-                    'Frontend Engineer',
-                    'Visual Designer'
+                    'UX Designer.',
+                    'Frontend Engineer.',
+                    'Visual Designer.'
                   ]"
                   :erase-delay="300"
                 >
