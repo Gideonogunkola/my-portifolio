@@ -1,5 +1,6 @@
 ---
 title: Omoge
+tab: visual
 description: Art illustration
 category: Illustration - Flat Illustration 
 slug: omoge

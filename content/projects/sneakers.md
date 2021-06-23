@@ -1,5 +1,6 @@
 ---
 title: Vegeta
+tab: visual
 description: Art illustration
 category: Illustration - Flat Illustration
 slug: sneakers

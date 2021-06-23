@@ -48,7 +48,8 @@ export default {
     },
   async fetch() {
     this.projects = await this.$content("projects")
-      .only(["title", "description", "category", "slug", "img"])
+      .only(["title", "description", "category", "slug", "img", "tab"])
+      .where({ tab: 'uiux' })
       .sortBy("CreatedAt", "desc")
       .fetch();
   },

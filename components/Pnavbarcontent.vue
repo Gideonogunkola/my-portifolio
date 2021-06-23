@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="pt-20 lg:pt-12">
+    <div class="pt-20 lg:pt-12 text-xl lg:text-2xl">
       <TabNav
         :tabs="['UI/UX Design', 'Visual Design', 'Web Development']"
         :selected="selected"

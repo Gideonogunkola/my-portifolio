@@ -1,5 +1,6 @@
 ---
 title: HandyMan
+tab: uiux
 description: An indemand-service app
 category: UI/UX - Mobile
 slug: handyman

@@ -1,5 +1,6 @@
 ---
 title: Kings Barley
+tab: visual
 description: A breverage company logo
 category: Branding - Brand Identity
 slug: kings-barley

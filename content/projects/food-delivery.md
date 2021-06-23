@@ -1,5 +1,6 @@
 ---
 title: Food Delivery
+tab: uiux
 description: Art Illustration
 category: UI/UX - Mobile
 slug: food-delivery
