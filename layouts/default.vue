@@ -59,4 +59,10 @@ body {
 .typewriter-msg {
   color: #27aae1;
 }
+a:active {
+  background-color:transparent;
+}
+a:focus {
+  background-color: transparent;
+}
 </style>

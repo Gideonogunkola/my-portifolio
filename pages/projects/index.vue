@@ -1,7 +1,7 @@
 <template>
   <div class="w-11/12 md:w-4/5 mx-auto text-base md:text-xl mt-24 lg:mt-24">
 
-    <Pnavbarcontent class=" mt-14" />
+    <Pnavbarcontent />
       <!-- <div
       class="grid gap-14 grid-col-1 md:grid-cols-2 xl:grid-cols-3 mt-24 pt-14 ">
       <div v-for="(project, index) in projects" :key="index">

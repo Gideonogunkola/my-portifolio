@@ -4,7 +4,7 @@ tab: uiux
 description: A clothes donation app
 category: UI/UX - Mobile 
 slug: clothen
-img: Rectangle 8.png
+img: clothen.jpg
 ---
 
 # Content

@@ -2,14 +2,14 @@
   <div class="mx-auto text-xl md:text-2xl">
       <transition name="myMenu">
             <div
-            class="grid gap-14 grid-col-1 md:grid-cols-2 xl:grid-cols-3 mt-14">
+            class="grid gap-14 grid-col-1 md:grid-cols-2 xl:grid-cols-3 mt-14 ">
             <div v-for="(project, index) in projects" :key="index">
                 <nuxt-link
                 :to="{ name: 'projects-slug', params: { slug: project.slug } }">
                 <div
                     class=" mx-auto h-auto flex flex-col lg:w-96 lg:h-96 rounded-3xl cursor-pointer parent">
                     <img
-                    class=" w-full"
+                    class=" w-full rounded-3xl"
                     :src="require(`~/assets/images/${project.img}`)"
                     alt="project-image"/>
                     <div class="child hidden lg:block">
