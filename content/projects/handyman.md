@@ -24,9 +24,10 @@ Handyman is an on-demand service app that connects users to professional service
 <div class=" pt-4 lg:p-4 mb-4 leading-9">
 I started this project by creating a survey to understand how users currenlty access their service providers and problem they are currenly facing with them. One of the key things I got is that users are skeptical about leaving a stranger alone, they are also face the problem of incomplete work after full payment. I curated these painpoint to write two personas that represented the all the target audience.  
 </div>
-  <div class="lg:w-4/5 mt-14 m-auto">
-    <div><dynamic-image filename="persona-2.jpg"></dynamic-image> </div>
-    <div Class = "mt-14"><dynamic-image filename="persona-1.jpg"></dynamic-image> </div>
+
+  <div class="mt-14">
+    <div class ="lg:w-4/5 m-auto" ><dynamic-image filename="persona-2.jpg"></dynamic-image> </div>
+    <div Class = "mt-14 lg:w-4/5 m-auto"><dynamic-image filename="persona-1.jpg"></dynamic-image> </div>
   </div>
 
 
