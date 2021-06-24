@@ -159,7 +159,7 @@ export default {
 }
 .common2 {
   @apply w-36 md:w-44 rounded-3xl bg-pryColor flex justify-center items-center cursor-pointer 
-           focus:border-transparent focus:outline-none -mt-3 lg:w-48;
+           focus:border-pryColor focus:outline-none -mt-3 lg:w-48 hover:bg-transparent hover:text-pryColor border-pryColor border-2 duration-300 ease-linear;
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
