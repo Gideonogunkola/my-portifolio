@@ -49,7 +49,7 @@ With the low-fideity prototype created, i moved a step forward by desgning and g
 <div class="pt-4 lg:p-4 mb-4 leading-9">
 For full casetudy and more screens. Kindly click the button below to check more on behance.
 </div>
-<btn3 text="See More" href="https://www.behance.net/gallery/122141817/Handyman-On-demand-service-app"> </btn3 >
+<btn3 class ="mt-4" text="See More" href="https://www.behance.net/gallery/122141817/Handyman-On-demand-service-app"> </btn3 >
 
 
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-11/12 md:w-4/5 mx-auto text-base md:text-2xl mt-24 lg:h-screen">
+  <div class="w-11/12 md:w-4/5 mx-auto text-xl md:text-2xl mt-24 lg:h-screen">
     <div class="pt-14 grid grid-cols-1 lg:grid-cols-3 lg:gap-14 lg:h-screen" >
         <div class="rounded-3xl lg:sticky lg:top-0">
             <img class=" mx-auto w-screen h-auto lg:w-full" :src="require(`~/assets/images/${projects.img}`)" alt="projects">
