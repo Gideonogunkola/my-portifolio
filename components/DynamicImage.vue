@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="dynamicImage">
+    <img class="lg:max-w-4/5 m-auto" :src="dynamicImage">
   </div>
 </template>
 
