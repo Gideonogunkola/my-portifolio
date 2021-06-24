@@ -60,9 +60,9 @@ body {
   color: #27aae1;
 }
 a:active {
-  background-color:transparent;
+  background-color:transparent !important;
 }
 a:focus {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 </style>

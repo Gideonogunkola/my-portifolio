@@ -38,11 +38,19 @@ module.exports = {
         normal: '4.6rem',
         sub: '4.3rem',
         high: '95%'
+       },
+       maxWidth: {
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+        '4/5': '80%'
        }
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['active'],
+    },
   },
   plugins: [
      require('@tailwindcss/forms'),
