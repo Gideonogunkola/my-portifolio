@@ -28,6 +28,7 @@ export default {
 }
 html {
   font-family: "begum", serif;
+  -webkit-tap-highlight-color: transparent;
 }
 body {
   margin: 0;
