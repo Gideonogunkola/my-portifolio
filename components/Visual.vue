@@ -78,7 +78,7 @@ export default {
       .limit(3)
       .only(["title", "description", "category", "slug", "img", "tab"])
       .where({ tab: "visual" })
-      .sortBy("CreatedAt", "asc")
+      .sortBy("CreatedAt", "desc")
       .fetch();
   },
 

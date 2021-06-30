@@ -3,7 +3,7 @@ title: Suave Group
 tab: uiux
 description: An Investment Platform
 category: UI/UX - Web
-slug: suavegroup
+slug: 03suavegroup
 img: suave-group.png
 ---
 

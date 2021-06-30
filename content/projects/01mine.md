@@ -3,7 +3,7 @@ title: HandyMan
 tab: uiux
 description: Porfiloio Design
 category: UI/UX - Web
-slug: mine
+slug: 01mine
 img: myportifolio.jpg
 ---
 
