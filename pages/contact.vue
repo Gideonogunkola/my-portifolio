@@ -1,5 +1,7 @@
 <template>
-  <div class="w-11/12 md:w-4/5 mx-auto text-xl md:text-2xl mt-24">
+  <div
+    class="w-11/12 max-w-screen-xlmd:w-4/5 mx-auto text-xl md:text-2xl mt-24"
+  >
     <section class="contact">
       <div>
         <div class="title">

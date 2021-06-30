@@ -1,5 +1,5 @@
 <template>
-  <div class="w-11/12 xl:w-4/5 mx-auto text-xl md:text-2xl">
+  <div class="w-11/12 max-w-screen-xl mx-auto text-xl md:text-2xl">
     <div>
       <!-- Preloader Begins -->
       <!-- <Preloader v-if="show" /> -->

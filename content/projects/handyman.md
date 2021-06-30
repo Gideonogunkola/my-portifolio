@@ -7,9 +7,6 @@ slug: handyman
 img: handyman.jpg
 ---
 
-
-
-
 <div class="lg:p-4 pt-4 mb-4 text-pryColor font-bold text-2xl lg:text-4xl">
   Project Overview
 </div>
@@ -30,11 +27,8 @@ I started this project by creating a survey to understand how users currenlty ac
     <div Class = "mt-14"><dynamic-image filename="persona-1.jpg"></dynamic-image> </div>
   </div>
 
-
-
 <!--more-->
 
- 
   <div class="mt-14 pt-4 lg:p-4 mb-4 leading-9">
     After this, I brainstormed on all possible solutions to address the painpoints, I noted different kinds of suggestions. The idea was to get large quantity of ideas that can be narrowd down late. I came up with the features for the mobile app before moving on the design the low fidelity prototype.  
   </div>
@@ -51,10 +45,3 @@ With the low-fideity prototype created, i moved a step forward by desgning and g
 For full casetudy and more screens. Kindly click the button below to check more on behance.
 </div>
 <btn3 class ="mt-4" text="See More" href="https://www.behance.net/gallery/122141817/Handyman-On-demand-service-app"> </btn3 >
-
-
-
- 
-
-
-   

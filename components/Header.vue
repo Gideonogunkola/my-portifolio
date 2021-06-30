@@ -1,7 +1,7 @@
 <template>
   <div class="h-24 fixed w-full z-10 animated top-0" :class="myShadow">
     <div
-      class="w-11/12 xl:w-4/5 m-auto h-24 flex justify-between items-center "
+      class="w-11/12 max-w-screen-xl m-auto h-24 flex justify-between items-center "
     >
       <div>
         <nuxt-link to="/" class="">

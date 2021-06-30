@@ -1,7 +1,7 @@
 <template>
   <div class="h-52 mt-12 lg:mt-28 w-full bg-secColor text-white leading-9">
     <div
-      class="grid grid-cols-1 lg:grid-cols-2 w-11/12 xl:w-4/5 m-auto content-center h-full"
+      class="grid grid-cols-1 lg:grid-cols-2 w-11/12 max-w-screen-xl m-auto content-center h-full"
     >
       <div>
         <p class=" hidden lg:block text-center lg:text-left">

@@ -1,8 +1,9 @@
 <template>
-  <div class="w-11/12 md:w-4/5 mx-auto text-base md:text-xl mt-24 lg:mt-24">
-
+  <div
+    class="w-11/12  max-w-screen-xl mx-auto text-base md:text-xl mt-24 lg:mt-24"
+  >
     <Pnavbarcontent />
-      <!-- <div
+    <!-- <div
       class="grid gap-14 grid-col-1 md:grid-cols-2 xl:grid-cols-3 mt-24 pt-14 ">
       <div v-for="(project, index) in projects" :key="index">
         <nuxt-link
@@ -48,23 +49,20 @@ export default {
   //     .fetch();
   //   return { projects };
   // },
-
   // computed:{
   //   myShadow(){
   //         if(this.$colorMode.preference === 'dark' ){
-  //            return  "shadow-now bg-blue" 
+  //            return  "shadow-now bg-blue"
   //         }else{
-  //             return "shadow-md" 
+  //             return "shadow-md"
   //         }
   //     },
   // }
 };
 </script>
 
-
-
 <style scoped>
-  /* .parent{
+/* .parent{
   position: relative;
 }
 .parent::after{
