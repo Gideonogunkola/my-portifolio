@@ -1,7 +1,9 @@
 <template>
-  <div v-if="isSelected">
-    <slot></slot>
-  </div>
+  <keep-alive>
+    <div v-if="isSelected">
+      <slot></slot>
+    </div>
+  </keep-alive>
 </template>
 
 <script>
