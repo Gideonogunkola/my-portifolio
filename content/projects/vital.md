@@ -1,7 +1,7 @@
 ---
 title: Vital Africa
 tab: visual
-description: Logo Design for Vital Africa
+description: A  Logo Design for Vital Africa
 category: Visual - Illustration
 slug: vital
 img: Vital Africa 2_Artboard 2.png
@@ -12,7 +12,7 @@ img: Vital Africa 2_Artboard 2.png
 </div>
 
 <div class="lg:p-4 mb-4 leading-9">
-This is a logo design for vital Africa, a community to ehance peace and unity in Africa. I designed two variation of lockups for this design.
+This is a logo design for vital Africa, a community to ehance freedom, peace and unity in Africa. I designed two variation of lockups for this design.
 <div class="pt-4 ">
  <span class = "text-pryColor font-bold"> Responsibility:</span> Visual Designer, Researcher
 </div>

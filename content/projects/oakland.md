@@ -1,7 +1,7 @@
 ---
-title: Kings Barley
+title: Oakland
 tab: visual
-description: A logo design
+description: A logo design for a multi-level reas-estate company
 category: Visual - Logo
 slug: oakland
 img: Oakland-08.png

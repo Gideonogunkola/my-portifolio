@@ -1,5 +1,5 @@
 ---
-title: My Portifolio Design
+title: My Portifolio
 tab: uiux
 description: Porfiloio Design
 category: UI/UX - Web

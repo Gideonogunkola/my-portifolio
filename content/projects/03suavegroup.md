@@ -4,7 +4,7 @@ tab: uiux
 description: An Investment Platform
 category: UI/UX - Web
 slug: 03suavegroup
-img: suave-group.png
+img: suave12.png
 ---
 
 <div class="lg:p-4 pt-4 mb-4 text-pryColor font-bold text-2xl lg:text-4xl">
