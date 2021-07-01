@@ -1,10 +1,10 @@
 <template>
-  <div class="w-11/12 max-w-screen-xl mx-auto text-xl md:text-2xl">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+  <div
+    class="w-11/12 max-w-screen-xl mx-auto text-xl md:text-2xl pt-20 lg:pt-24"
+  >
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-28 gap-10">
       <!-- first-grid -->
-      <div
-        class="content-area mt-20 lg:mt-24 flex items-center justify-center lg:items-center"
-      >
+      <div class="content-area mt-14 flex items-center">
         <div class="">
           <div class="">
             <div>
@@ -44,7 +44,7 @@
       </div>
 
       <!-- second-grid -->
-      <div class="content-area1 lg:mt-24 flex lg:items-end lg:justify-end">
+      <div class="content-area1 flex lg:items-end lg:justify-end">
         <img
           class="w-auto lg:h-high"
           src="@/assets/images/Gideon Ogunkola 1.png"
@@ -328,7 +328,7 @@ export default {
 }
 @media screen and (max-width: 700px) {
   .content-area {
-    height: calc(100vh - theme("spacing.20"));
+    height: 100%;
   }
   .content-area1 {
     height: 100%;
