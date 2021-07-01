@@ -2,9 +2,9 @@
   <div
     class="w-11/12 max-w-screen-xl mx-auto text-xl md:text-2xl pt-20 lg:pt-24"
   >
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-28 gap-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-32 lg:gap-x-10">
       <!-- first-grid -->
-      <div class="content-area mt-14 flex items-center">
+      <div class="content-area mt-14 lg:mt-0 flex items-center">
         <div class="">
           <div class="">
             <div>
