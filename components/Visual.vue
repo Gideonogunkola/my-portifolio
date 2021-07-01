@@ -10,7 +10,7 @@
               class=" mx-auto h-auto flex flex-col lg:w-96 lg:h-96 rounded-3xl cursor-pointer parent"
             >
               <img
-                class=" w-full"
+                class=" w-full rounded-3xl"
                 :src="require(`~/assets/images/${project.img}`)"
                 alt="project-image"
               />

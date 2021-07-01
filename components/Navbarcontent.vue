@@ -9,18 +9,16 @@
       </TabNav>
 
       <div class="">
-        <keep-alive>
-          <Tab :isSelected="selected === 'UI/UX Design'">
-            <Uiux />
-          </Tab>
-          <Tab :isSelected="selected === 'Visual Design'">
-            <Visual />
-          </Tab>
+        <Tab :isSelected="selected === 'UI/UX Design'">
+          <Uiux />
+        </Tab>
+        <Tab :isSelected="selected === 'Visual Design'">
+          <Visual />
+        </Tab>
 
-          <Tab :isSelected="selected === 'Web Development'">
-            <Web />
-          </Tab>
-        </keep-alive>
+        <Tab :isSelected="selected === 'Web Development'">
+          <Web />
+        </Tab>
       </div>
     </div>
   </div>
