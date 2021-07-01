@@ -1,7 +1,7 @@
 ---
 title: Omoge
 tab: visual
-description: An open class organised by Leye Ogunsanya
+description: An open class design
 category: Visual - Illustration
 slug: omoge
 img: omoge.png

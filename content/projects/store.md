@@ -1,7 +1,7 @@
 ---
 title: Isometric Store
 tab: visual
-description: An open class organised by Leye Ogunsanya
+description: An open class design
 category: Visual - Isometric design
 slug: store
 img: Isometic-store-Design-[Recovered]-04.png

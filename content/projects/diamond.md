@@ -1,7 +1,7 @@
 ---
 title: Diamond
 tab: visual
-description: An open class organised by Leye Ogunsanya
+description: An open class design
 category: Visual - Illustration
 slug: diamond
 img: Diamonds-02.png

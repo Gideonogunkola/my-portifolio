@@ -1,7 +1,7 @@
 ---
 title: Kandra
 tab: visual
-description: A logo design for an interior decorator
+description: A logo design
 category: Visual - Logo Design
 slug: kandra
 img: Kandra Logo original-05.jpg

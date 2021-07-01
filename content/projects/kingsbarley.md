@@ -1,7 +1,7 @@
 ---
 title: Kings Barley
 tab: visual
-description: A brand identoty design for a bevearage company
+description: A brand identity design
 category: Visual - Brand Identity
 slug: kingsbarley
 img: Kingsbarley.png
