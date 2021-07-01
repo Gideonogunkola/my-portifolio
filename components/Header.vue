@@ -48,7 +48,7 @@
           v-if="displayMenu"
         >
           <div
-            class="w-11/12 xl:w-4/5 m-auto h-24 flex justify-between items-center "
+            class="w-11/12 xl:w-4/5 m-auto h-20 lg:h-24 flex justify-between items-center "
           >
             <div>
               <nuxt-link to="/" class="">
@@ -87,7 +87,7 @@
           </div>
 
           <div class="w-11/12 md:w-4/5 m-auto">
-            <ul class="pt-4 md:pt-16 lg:pt-16 pb-24">
+            <ul class="pt-8 md:pt-16 lg:pt-16 pb-24">
               <li class="menu"><nuxt-link to="/">Home</nuxt-link></li>
               <li class="menu">
                 <nuxt-link to="/projects">My Works</nuxt-link>
