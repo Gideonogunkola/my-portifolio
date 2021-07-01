@@ -7,7 +7,7 @@
       <!-- Hero Section Begins -->
       <section class="hero-section h-screen">
         <div
-          class=" pt-8 lg:pt-0 grid grid-col-1 lg:grid-cols-2 gap-10 h-screen"
+          class=" pt-4 lg:pt-0 grid grid-col-1 lg:grid-cols-2 gap-10 h-screen"
         >
           <div
             class="h-screen lg:h-full flex items-center justify-center lg:pt-24"
