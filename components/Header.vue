@@ -134,10 +134,10 @@ export default {
   },
   computed: {
     imageUrl() {
-      if (this.$colorMode.preference === "dark") {
-        return require(`~/assets/images/logo2.svg`);
-      } else {
+      if (this.$colorMode.preference === "light") {
         return require(`~/assets/images/logo.svg`);
+      } else {
+        return require(`~/assets/images/logo2.svg`);
       }
     },
     displayicon() {
@@ -169,9 +169,9 @@ export default {
       this.$colorMode.preference === "false";
     }
     if (this.$colorMode.preference === "dark") {
-      this.checked = true;
+      this.checked === true;
     } else {
-      this.checked = false;
+      this.checked === false;
     }
   },
   watch: {
