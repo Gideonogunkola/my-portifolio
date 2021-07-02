@@ -15,7 +15,6 @@
           <div
             class="w-12 h-4 md:w-14 md:h-4 flex items-center bg-gray-300 rounded-full duration-500 ease-in-out cursor-pointer"
             @click="toggle"
-            :class="{ 'bg-gray-500': toggleActive }"
           >
             <!-- Switch -->
             <div
