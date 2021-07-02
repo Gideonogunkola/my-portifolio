@@ -163,6 +163,11 @@ export default {
     }
   },
   mounted() {
+    if (this.checked === true) {
+      this.$colorMode.preference === "dark";
+    } else {
+      this.$colorMode.preference === "false";
+    }
     if (this.$colorMode.preference === "dark") {
       this.checked = true;
     } else {
