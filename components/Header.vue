@@ -13,7 +13,7 @@
       >
         <div class="flex items-center">
           <label class="switch">
-            <input type="checkbox" v-model="checked" @click="toggle" />
+            <input type="checkbox" v-model="checked" @input="toggle" />
             <span class="slider round"></span>
           </label>
           <p class="text-xl md:text-xl pl-3">Mode</p>
@@ -53,7 +53,7 @@
             >
               <div class="flex items-center">
                 <label class="switch">
-                  <input type="checkbox" v-model="checked" @click="toggle" />
+                  <input type="checkbox" v-model="checked" />
                   <span class="slider round"></span>
                 </label>
                 <p class="text-xl md:text-xl pl-3">Mode</p>
@@ -126,7 +126,7 @@ export default {
   methods: {
     toggle() {
       this.$colorMode.preference =
-        this.$colorMode.preference === "light" ? "dark" : "light";
+        this.$colorMode.value == "light" ? "dark" : "light";
     },
     navbar() {
       this.displayMenu = !this.displayMenu;
@@ -134,7 +134,7 @@ export default {
   },
   computed: {
     imageUrl() {
-      if (this.checked === true) {
+      if (this.checked) {
         return require(`~/assets/images/logo2.svg`);
       } else {
         return require(`~/assets/images/logo.svg`);
@@ -163,7 +163,7 @@ export default {
     }
   },
   mounted() {
-    if (this.checked === true) {
+    if ((this.checked = true)) {
       this.$colorMode.preference === "dark";
     } else {
       this.$colorMode.preference === "false";

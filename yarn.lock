@@ -1377,10 +1377,10 @@
     "webpack-node-externals" "^3.0.0"
     "webpackbar" "^4.0.0"
 
-"@nuxtjs/color-mode@^2.0.9":
-  "integrity" "sha512-Oh+aXZeHgzdMBGioJ4qGssoKBxoWyXPVrZs7/FOY53eieNdW/+cY157PYYBNvEJBJCG4mnbdmdTdNM0P+aA+Fw=="
-  "resolved" "https://registry.npmjs.org/@nuxtjs/color-mode/-/color-mode-2.0.9.tgz"
-  "version" "2.0.9"
+"@nuxtjs/color-mode@^2.0.10":
+  "integrity" "sha512-eG2BHQaN7RApzbkaQ/IRzbrMRl1U5JvGK0gNYYek56P4eMkUqKnJqRLv9M56tsENtoZEa+4hg8Hd5iB+lZWFwg=="
+  "resolved" "https://registry.npmjs.org/@nuxtjs/color-mode/-/color-mode-2.0.10.tgz"
+  "version" "2.0.10"
   dependencies:
     "defu" "^5.0.0"
     "lodash.template" "^4.5.0"
