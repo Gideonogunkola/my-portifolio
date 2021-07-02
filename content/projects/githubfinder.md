@@ -3,7 +3,7 @@ title: Github Finder
 tab: web
 description: Web app  for finding github users
 category: Web - Frontend
-slug: manage
+slug: githubfinder
 img: github.png
 ---
 
@@ -25,4 +25,4 @@ This project is live on netlify
 <div class="pt-4 lg:p-4 mb-4 leading-9">
 Click on the button below to check it out.
 </div>
-<btn3 class ="mt-4" text="See More" href="https://github-users-tracker.netlify.app"> </btn3 >
+<btn3 class ="mt-4" text=" Visit Website" href="https://github-users-tracker.netlify.app"> </btn3 >

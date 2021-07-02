@@ -25,4 +25,4 @@ This project is live
 <div class="pt-4 lg:p-4 mb-4 leading-9">
 Click on the button below to check it out.
 </div>
-<btn3 class ="mt-4" text="See More" href="https://suavegroupng.com"> </btn3 >
+<btn3 class ="mt-4" text="Check Website" href="https://suavegroupng.com"> </btn3 >
