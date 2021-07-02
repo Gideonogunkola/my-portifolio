@@ -53,7 +53,7 @@
             >
               <div class="flex items-center">
                 <label class="switch">
-                  <input type="checkbox" v-model="checked" />
+                  <input type="checkbox" v-model="checked" @input="toggle" />
                   <span class="slider round"></span>
                 </label>
                 <p class="text-xl md:text-xl pl-3">Mode</p>

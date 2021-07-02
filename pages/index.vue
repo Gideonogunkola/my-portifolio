@@ -2,9 +2,11 @@
   <div
     class="w-11/12 max-w-screen-xl mx-auto text-xl md:text-2xl pt-20 lg:pt-24"
   >
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-32 lg:gap-x-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-32 md:gap-y-20 ">
       <!-- first-grid -->
-      <div class="content-area mt-14 lg:mt-0 flex items-center">
+      <div
+        class="content-area mt-14 md:mt-0 flex md: justify-cente items-center md:text-center lg:text-left"
+      >
         <div class="">
           <div class="">
             <div>
@@ -13,7 +15,7 @@
               </p>
             </div>
             <div
-              class="pt-8 text-3xl leading-tight md:text-6xl lg:text-5xl xl:text-h1 font-bold md:leading-none"
+              class="pt-8 text-3xl leading-tight md:text-5xl lg:text-5xl xl:text-h1 font-bold md:leading-none"
             >
               <typewriter
                 :speed="200"
@@ -35,7 +37,7 @@
               solve real-time problems through user-centric design.
             </p>
 
-            <div class="flex pt-8">
+            <div class="flex pt-8 md:justify-center lg:justify-start">
               <BtnPry text=" My Works" href="/projects" />
               <BtnSec text=" Let's talk" href="/contact" class="pl-6 md:pl-8" />
             </div>
@@ -44,7 +46,9 @@
       </div>
 
       <!-- second-grid -->
-      <div class="content-area1 flex lg:items-end lg:justify-end">
+      <div
+        class="content-area1 flex lg:items-center md:justify-center lg:justify-end"
+      >
         <img
           class="w-auto lg:h-high"
           src="@/assets/images/Gideon Ogunkola 1.png"
@@ -190,7 +194,9 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:justify-items-center lg:justify-items-start"
+        >
           <div>
             <p class="pb-6 lg:pb-10 text-xl md:text-2xl font-bold">
               My Contact Details

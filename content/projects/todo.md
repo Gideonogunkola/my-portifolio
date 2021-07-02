@@ -12,7 +12,7 @@ img: todolist.png
 </div>
 
 <div class="lg:p-4 mb-4 leading-9">
-I fetched data from https://jsonplaceholder.typicode.com/ suing Axios and Vuex to manage my state. User can delete data fetched and can also add to it as a to-do list.
+I fetched data from <a target="_blank"targe_blank href="https://jsonplaceholder.typicode.com/"> jsonplaceholder </a>  using Axios and Vuex to manage my state. User can delete data fetched and can also add to it as a to-do list.
 <div class="pt-4 ">
  <span class = "text-pryColor font-bold"> Responsibility:</span> Frontend Developer
 </div>
