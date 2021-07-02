@@ -142,7 +142,6 @@ export default {
       this.toggleActive = !this.toggleActive;
       this.$colorMode.preference =
         this.$colorMode.preference === "light" ? "dark" : "light";
-      this.displayMenu = false;
     },
     navbar() {
       this.displayMenu = !this.displayMenu;
@@ -150,10 +149,10 @@ export default {
   },
   computed: {
     imageUrl() {
-      if (this.$colorMode.preference === "light") {
-        return require(`~/assets/images/logo.svg`);
-      } else {
+      if (this.toggleActive === true) {
         return require(`~/assets/images/logo2.svg`);
+      } else {
+        return require(`~/assets/images/logo.svg`);
       }
     },
     displayicon() {
@@ -178,11 +177,11 @@ export default {
       }
     }
   },
-  created() {
-    if (this.$colorMode.preference === "light") {
-      this.toggleActive = false;
+  beforeMount() {
+    if (this.toggleActive === true) {
+      this.$colorMode.preference === "dark";
     } else {
-      this.toggleActive = true;
+      this.$colorMode.preference === "light";
     }
   },
   watch: {
