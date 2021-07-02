@@ -132,7 +132,7 @@
 export default {
   data() {
     return {
-      toggleActive: false,
+      toggleActive: null,
       displayMenu: false,
       displayShow: true
     };
@@ -149,7 +149,7 @@ export default {
   },
   computed: {
     imageUrl() {
-      if (this.$colorMode === "dark") {
+      if (this.$colorMode.preference === "dark") {
         return require(`~/assets/images/logo2.svg`);
       } else {
         return require(`~/assets/images/logo.svg`);
