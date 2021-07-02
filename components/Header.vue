@@ -178,6 +178,11 @@ export default {
     }
   },
   beforeMount() {
+    if (this.$colorMode.preference === "dark") {
+      this.toggleActive === true;
+    } else {
+      this.toggleActive === false;
+    }
     if (this.toggleActive === true) {
       this.$colorMode.preference === "dark";
     } else {
