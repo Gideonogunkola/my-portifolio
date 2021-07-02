@@ -179,14 +179,14 @@ export default {
   },
   beforeMount() {
     if (this.$colorMode.preference === "dark") {
-      this.toggleActive === true;
+      this.toggleActive = true;
     } else {
-      this.toggleActive === false;
+      this.toggleActive = false;
     }
-    if (this.toggleActive === true) {
-      this.$colorMode.preference === "dark";
-    } else {
+    if ((this.toggleActive = false)) {
       this.$colorMode.preference === "light";
+    } else {
+      this.$colorMode.preference === "dark";
     }
   },
   watch: {
