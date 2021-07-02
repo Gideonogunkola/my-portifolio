@@ -126,7 +126,7 @@ export default {
   methods: {
     toggle() {
       this.$colorMode.preference =
-        this.$colorMode.value == "light" ? "dark" : "light";
+        this.$colorMode.value === "light" ? "dark" : "light";
     },
     navbar() {
       this.displayMenu = !this.displayMenu;
@@ -134,7 +134,7 @@ export default {
   },
   computed: {
     imageUrl() {
-      if (this.checked) {
+      if (this.$colorMode.preference === "dark") {
         return require(`~/assets/images/logo2.svg`);
       } else {
         return require(`~/assets/images/logo.svg`);
