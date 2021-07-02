@@ -1,9 +1,9 @@
 ---
 title: Smoothie Recipe
 tab: web
-description: Web app  for finding github users
+description: Web app  for storing smoothie recipe
 category: Web - Frontend
-slug: manage
+slug: smoothie
 img: smoothies.png
 ---
 
