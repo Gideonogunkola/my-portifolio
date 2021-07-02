@@ -12,17 +12,11 @@
         class="flex items-center justify-between w-2/3 md:w-2/4 lg:w-2/4 xl:w-1/4"
       >
         <div class="flex items-center">
-          <div
-            class="w-12 h-4 md:w-14 md:h-4 flex items-center bg-gray-300 rounded-full duration-500 ease-in-out cursor-pointer"
-            @click="toggle"
-          >
-            <!-- Switch -->
-            <div
-              class="bg-pryColor w-6 h-6 md:w-7 md:h-7 rounded-full shadow-md transform duration-500 ease-in-out cursor-pointer"
-              :class="{ 'translate-x-6 md:translate-x-7': toggleActive }"
-            ></div>
-          </div>
-          <p class="text-xl md:text-xl pl-2">Mode</p>
+          <label class="switch">
+            <input type="checkbox" v-model="checked" @click="toggle" />
+            <span class="slider round"></span>
+          </label>
+          <p class="text-xl md:text-xl pl-3">Mode</p>
         </div>
 
         <div>
@@ -58,18 +52,11 @@
               class="flex items-center justify-between w-2/3 md:w-2/4 lg:w-2/4 xl:w-1/4"
             >
               <div class="flex items-center">
-                <div
-                  class="w-12 h-4 md:w-14 md:h-4 flex items-center bg-gray-300 rounded-full duration-500 ease-in-out cursor-pointer"
-                  @click="toggle"
-                  :class="{ 'bg-gray-500': toggleActive }"
-                >
-                  <!-- Switch -->
-                  <div
-                    class="bg-pryColor w-6 h-6 md:w-7 md:h-7 rounded-full shadow-md transform duration-500 ease-in-out cursor-pointer"
-                    :class="{ 'translate-x-6 md:translate-x-7': toggleActive }"
-                  ></div>
-                </div>
-                <p class="text-xl md:text-xl pl-2">Mode</p>
+                <label class="switch">
+                  <input type="checkbox" v-model="checked" @click="toggle" />
+                  <span class="slider round"></span>
+                </label>
+                <p class="text-xl md:text-xl pl-3">Mode</p>
               </div>
 
               <div>
@@ -131,14 +118,13 @@
 export default {
   data() {
     return {
-      toggleActive: null,
+      checked: null,
       displayMenu: false,
       displayShow: true
     };
   },
   methods: {
     toggle() {
-      this.toggleActive = !this.toggleActive;
       this.$colorMode.preference =
         this.$colorMode.preference === "light" ? "dark" : "light";
     },
@@ -148,7 +134,7 @@ export default {
   },
   computed: {
     imageUrl() {
-      if (this.$colorMode.preference === "dark") {
+      if (this.checked === true) {
         return require(`~/assets/images/logo2.svg`);
       } else {
         return require(`~/assets/images/logo.svg`);
@@ -176,16 +162,11 @@ export default {
       }
     }
   },
-  beforeMount() {
+  mounted() {
     if (this.$colorMode.preference === "dark") {
-      this.toggleActive === true;
+      this.checked = true;
     } else {
-      this.toggleActive === false;
-    }
-    if (this.toggleActive === false) {
-      this.$colorMode.preference === "light";
-    } else {
-      this.$colorMode.preference === "dark";
+      this.checked = false;
     }
   },
   watch: {
@@ -210,5 +191,85 @@ export default {
 }
 .nuxt-link-exact-active {
   color: #27aae1;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 18px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: -3px;
+  bottom: -5px;
+  background-color: #27aae1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #404040;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(34px);
+  -ms-transform: translateX(34px);
+  transform: translateX(34px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 700px) {
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    left: -5px;
+    bottom: -4px;
+    background-color: #27aae1;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 16px;
+  }
 }
 </style>
