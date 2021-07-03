@@ -155,7 +155,7 @@
             <div class="w-4/5 mx-auto">
               <h3 class="text-2xl font-semibold">Prototype</h3>
               <p class="leading-9 pt-4">
-                I tansfrom the solutions into a high fidelity prototype.
+                I tansform the solutions into a high fidelity prototype.
               </p>
             </div>
           </div>

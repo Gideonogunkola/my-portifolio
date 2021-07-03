@@ -24,7 +24,7 @@
           <div class="flex md:justify-center lg: justify-start">
             <Btn3
               text="My Resume"
-              href="https://drive.google.com/file/d/1jJct4E3D6y2WM5hJh0DkSEDItFYvqujr/view"
+              href="https://drive.google.com/file/d/1-EzUh9VI0qwusWskonIYacsgkgSD2raC/view"
             />
           </div>
         </div>

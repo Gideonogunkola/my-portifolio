@@ -32,7 +32,7 @@ export default {
 
   loadingIndicator: {
     name: "circle",
-    color: "#000"
+    color: "#27AAE1"
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -51,9 +51,12 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
-    "@nuxtjs/color-mode"
+    "@nuxtjs/color-mode",
+    "@nuxtjs/google-analytics"
   ],
-
+  googleAnalytics: {
+    id: "277994064"
+  },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["@nuxt/content"],
 
