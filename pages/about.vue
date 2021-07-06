@@ -21,7 +21,7 @@
             am an expert in the use design applications such as Photoshop,
             Illustrator, InDesign, Adobe XD, and Figma
           </p>
-          <div class="flex md:justify-center lg: justify-start">
+          <div class="flex md:justify-center lg:justify-start">
             <Btn3
               text="My Resume"
               href="https://drive.google.com/file/d/1-EzUh9VI0qwusWskonIYacsgkgSD2raC/view"
