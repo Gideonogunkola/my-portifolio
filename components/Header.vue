@@ -81,10 +81,7 @@
               <li class="menu"><nuxt-link to="/about">About Me</nuxt-link></li>
               <p class="pt-14 text-right font-bold text-2xl">Let's Talk</p>
               <p class="pt-3 text-right text-xl md:text-2xl">
-                <a href="mailto:me@gideonogunkola.com">me@gideonogunkola.com</a>
-              </p>
-              <p class="pt-2 text-right text-xl md:text-2xl">
-                <a href="mailto:ogunkolagideon@gmail.com"
+                <a href="mailto:me@gideonogunkola.com"
                   >ogunkolagideon@gmail.com</a
                 >
               </p>
@@ -188,7 +185,7 @@ export default {
 }
 .myMenu-enter-active,
 .myMenu-leave-active {
-  transition: opacity 0.8s;
+  transition: opacity 1.5s;
 }
 .myMenu-enter,
 .myMenu-leave-to {

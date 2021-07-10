@@ -50,7 +50,7 @@
         class="content-area1 flex lg:items-center md:justify-center lg:justify-end"
       >
         <img
-          class="w-auto lg:h-high"
+          class="w-auto h-full lg:h-high"
           src="@/assets/images/Gideon Ogunkola 1.png"
           alt="Gideon Ogunkola"
         />
@@ -222,7 +222,7 @@
                   data-inline="false"
                 ></span>
               </div>
-              <p class="pl-1 md:pl-4">me@gideonogunkola.com</p>
+              <p class="pl-1 md:pl-4">ogunkolagideon@gmail.com</p>
             </div>
             <div class="flex items-center pb-6 md:pb-10">
               <div
@@ -245,7 +245,7 @@
                   data-inline="false"
                 ></span>
               </div>
-              <p class="pl-1 md:pl-4">ogunkolagideon@gmail.com</p>
+              <p class="pl-1 md:pl-4">gideonogunkola@gmail.com</p>
             </div>
             <div class="flex items-center pb-6 md:pb-10">
               <div

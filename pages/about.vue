@@ -5,7 +5,7 @@
         class="content-area1 mt-20 lg:mt-24 flex items-center justify-center lg:items-center"
       >
         <img
-          class=" w-auto"
+          class=" w-auto h-auto"
           src="~/assets/images/Gideon Ogunkola 2.png"
           alt="Gideon Ogunkola"
         />
@@ -24,7 +24,7 @@
           <div class="flex md:justify-center lg:justify-start">
             <Btn3
               text="My Resume"
-              href="https://drive.google.com/file/d/1-EzUh9VI0qwusWskonIYacsgkgSD2raC/view"
+              href="https://drive.google.com/file/d/1hLm4C_ZyQjAc1tkwr3D8BEpxko3ueB37/view"
             />
           </div>
         </div>
