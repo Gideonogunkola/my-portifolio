@@ -50,7 +50,7 @@
         class="content-area1 flex lg:items-center md:justify-center lg:justify-end"
       >
         <img
-          class="w-auto h-full lg:h-high"
+          class="w-auto h-auto lg:h-high"
           src="@/assets/images/Gideon Ogunkola 1.png"
           alt="Gideon Ogunkola"
         />

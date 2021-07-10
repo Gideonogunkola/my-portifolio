@@ -8,6 +8,7 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    darkSelector: ".dark-mode",
     extend: {
       fontFamily: {
         begum: ["begum", "serif"]
@@ -50,9 +51,32 @@ module.exports = {
     }
   },
   variants: {
-    extend: {
-      backgroundColor: ["active"]
-    }
+    backgroundColor: [
+      "dark",
+      "dark-hover",
+      "dark-group-hover",
+      "dark-even",
+      "dark-odd",
+      "hover",
+      "focus",
+      "responsive"
+    ],
+    borderColor: [
+      "dark",
+      "dark-focus",
+      "dark-focus-within",
+      "hover",
+      "focus",
+      "responsive"
+    ],
+    textColor: [
+      "dark",
+      "dark-hover",
+      "dark-active",
+      "hover",
+      "responsive",
+      "focus"
+    ]
   },
-  plugins: [require("@tailwindcss/forms")]
+  plugins: [require("@tailwindcss/forms"), require("tailwindcss-dark-mode")()]
 };

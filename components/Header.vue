@@ -21,12 +21,11 @@
 
         <div>
           <div
-            class="flex items-center"
+            class="flex items-center focus:border-transparent"
             tabindex="0"
             role="button"
             aria-pressed="false"
             @click="navbar"
-            @keydown="navbar"
           >
             <span
               class="iconify text-pryColor w-12 h-12 cursor-pointer"
@@ -48,7 +47,7 @@
           v-if="displayMenu"
         >
           <div
-            class="w-11/12 xl:w-4/5 m-auto h-20 lg:h-24 flex justify-between items-center "
+            class="w-11/12 max-w-screen-xl m-auto h-20 lg:h-24 flex justify-between items-center "
           >
             <div role>
               <nuxt-link to="/" class="">
@@ -68,12 +67,11 @@
 
               <div>
                 <div
-                  class="flex items-center"
+                  class="flex items-center focus:border-transparent"
                   tabindex="0"
                   role="button"
                   aria-pressed="false"
                   @click="navbar"
-                  @keydown="navbar"
                 >
                   <span
                     class="iconify text-pryColor w-12 h-12 cursor-pointer"
