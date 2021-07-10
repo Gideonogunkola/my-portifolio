@@ -20,7 +20,14 @@
         </div>
 
         <div>
-          <div class="flex items-center" @click="navbar">
+          <div
+            class="flex items-center"
+            tabindex="0"
+            role="button"
+            aria-pressed="false"
+            @click="navbar"
+            @keydown="navbar"
+          >
             <span
               class="iconify text-pryColor w-12 h-12 cursor-pointer"
               :data-icon="displayicon"
@@ -43,7 +50,7 @@
           <div
             class="w-11/12 xl:w-4/5 m-auto h-20 lg:h-24 flex justify-between items-center "
           >
-            <div>
+            <div role>
               <nuxt-link to="/" class="">
                 <img :src="imageUrl" alt="logo" />
               </nuxt-link>
@@ -60,7 +67,14 @@
               </div>
 
               <div>
-                <div class="flex items-center" @click="navbar">
+                <div
+                  class="flex items-center"
+                  tabindex="0"
+                  role="button"
+                  aria-pressed="false"
+                  @click="navbar"
+                  @keydown="navbar"
+                >
                   <span
                     class="iconify text-pryColor w-12 h-12 cursor-pointer"
                     :data-icon="displayicon"
