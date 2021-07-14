@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@iconify/json-tools": "^1.0.10",
     "@nuxt/content": "^1.14.0",
     "@tailwindcss/forms": "^0.3.3",
     "core-js": "^3.9.1",

@@ -3,7 +3,7 @@ title: Vital Africa
 tab: visual
 description: A logo design for an Africa movement
 category: Visual - Logo
-slug: vital
+slug: 10vital
 img: Vital Africa 2_Artboard 2.png
 ---
 

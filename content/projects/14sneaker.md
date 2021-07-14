@@ -3,7 +3,7 @@ title: Sneakers
 tab: visual
 description: A sneaker illustrtion
 category: Visual - Illustration
-slug: sneaker
+slug: 14sneaker
 img: vegeta.png
 ---
 

@@ -1,10 +1,10 @@
 ---
-title: Todo List
+title: Countries Details App
 tab: web
-description: A todolist app.
+description: Web app showing all Countries details.
 category: Web - Frontend
-slug: todo
-img: todolist.png
+slug: 24restcountries
+img: country.jpg
 ---
 
 <div class="lg:p-4 pt-4 mb-4 text-pryColor font-bold text-2xl lg:text-4xl">
@@ -12,7 +12,7 @@ img: todolist.png
 </div>
 
 <div class="lg:p-4 mb-4 leading-9">
-I fetched data from <a target="_blank"targe_blank href="https://jsonplaceholder.typicode.com/"> jsonplaceholder </a>  using Axios and Vuex to manage my state. User can delete data fetched and can also add to it as a to-do list.
+I fetched data from <a target="_blank"targe_blank href="https://jsonplaceholder.typicode.com/"> jsonplaceholder </a>  using Axios and Vuex to manage my state. User can search for country and also filter based on continent It is still work in progress.
 <div class="pt-4 ">
  <span class = "text-pryColor font-bold"> Responsibility:</span> Frontend Developer
 </div>
@@ -25,4 +25,4 @@ This project is live on netlify
 <div class="pt-4 lg:p-4 mb-4 leading-9">
 Click on the button below to check it out.
 </div>
-<btn3 class ="mt-4" text="Visit" href="https://my-todo-vue.netlify.app"> </btn3 >
+<btn3 class ="mt-4" text="Visit" href="https://happy-countries-api.netlify.app/"> </btn3 >

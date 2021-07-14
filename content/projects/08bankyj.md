@@ -3,7 +3,7 @@ title: BankyJ Leather
 tab: visual
 description: A logo design for a leather making company
 category: Visual - Logo Design
-slug: bankyj
+slug: 08bankyj
 img: Bankyj Leathers-10.png
 ---
 

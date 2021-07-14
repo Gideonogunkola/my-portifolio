@@ -3,7 +3,7 @@ title: Omoge
 tab: visual
 description: Peacok Logo design
 category: Visual - Logo
-slug: peacock
+slug: 11peacock
 img: peacock1.png
 ---
 

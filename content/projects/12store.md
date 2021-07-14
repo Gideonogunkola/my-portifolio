@@ -3,7 +3,7 @@ title: Isometric Store
 tab: visual
 description: An open class design
 category: Visual - Isometric design
-slug: store
+slug: 12store
 img: Isometic-store-Design-[Recovered]-04.png
 ---
 

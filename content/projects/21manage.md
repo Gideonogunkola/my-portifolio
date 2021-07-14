@@ -1,10 +1,10 @@
 ---
-title: Github Finder
+title: Manage
 tab: web
-description: Web app  for finding github users
+description: Landing page for manage website
 category: Web - Frontend
-slug: githubfinder
-img: github.png
+slug: 21manage
+img: manage.png
 ---
 
 <div class="lg:p-4 pt-4 mb-4 text-pryColor font-bold text-2xl lg:text-4xl">
@@ -12,7 +12,7 @@ img: github.png
 </div>
 
 <div class="lg:p-4 mb-4 leading-9">
-The applciation provides details of a use depending on the username searched for. I built this using html, bootstrap, javascript.
+This is a coding challenge from frontend mentor. I used Vue.JS and TailwindCSS to achieve this project.
 <div class="pt-4 ">
  <span class = "text-pryColor font-bold"> Responsibility:</span> Frontend Developer
 </div>
@@ -25,4 +25,4 @@ This project is live on netlify
 <div class="pt-4 lg:p-4 mb-4 leading-9">
 Click on the button below to check it out.
 </div>
-<btn3 class ="mt-4" text=" Visit" href="https://github-users-tracker.netlify.app"> </btn3 >
+<btn3 class ="mt-4" text="Visit" href="https://happy-manage.netlify.app"> </btn3 >
