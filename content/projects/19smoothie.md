@@ -1,6 +1,6 @@
 ---
 title: Smoothie Recipe
-tab: web
+tab: dev
 description: Web app  for storing smoothie recipe
 category: Web - Frontend
 slug: 19smoothie

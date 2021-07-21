@@ -1,6 +1,6 @@
 ---
 title: Suave
-tab: web
+tab: dev
 description: Website for Suave
 category: Web - Frontend
 slug: 23suavegroup

@@ -1,6 +1,6 @@
 ---
 title: Manage
-tab: web
+tab: dev
 description: Landing page for manage website
 category: Web - Frontend
 slug: 21manage

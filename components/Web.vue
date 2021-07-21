@@ -77,7 +77,7 @@ export default {
     this.projects = await this.$content("projects")
       .limit(3)
       .only(["title", "description", "category", "slug", "img", "tab"])
-      .where({ tab: "web" })
+      .where({ tab: "dev" })
       .sortBy("CreatedAt", "desc")
       .fetch();
   },

@@ -40,6 +40,29 @@
         </div>
       </div>
     </transition>
+    <div
+      class="
+            flex
+            justify-between
+            mx-auto
+            items-center
+            h-32
+            w-36
+            mt-8
+            cursor-pointer
+          "
+    >
+      <nuxt-link to="/projects">
+        <p class="text-center">See More</p>
+      </nuxt-link>
+      <nuxt-link to="/projects">
+        <span
+          class="iconify h-8 w-auto"
+          data-icon="bi:arrow-right"
+          data-inline="false"
+        ></span>
+      </nuxt-link>
+    </div>
   </div>
 </template>
 
@@ -53,7 +76,7 @@ export default {
   async fetch() {
     this.projects = await this.$content("projects")
       .only(["title", "description", "category", "slug", "img", "tab"])
-      .where({ tab: "web" })
+      .where({ tab: "dev" })
       .sortBy("CreatedAt", "asc")
       .fetch();
   },

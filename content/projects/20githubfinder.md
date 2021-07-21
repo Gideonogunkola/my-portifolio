@@ -1,9 +1,9 @@
 ---
 title: Github Finder
-tab: web
+tab:
 description: Web app  for finding github users
 category: Web - Frontend
-slug: githubfinder
+slug: 20githubfinder
 img: 20github.png
 ---
 
@@ -19,10 +19,10 @@ The applciation provides details of a use depending on the username searched for
 </div>
 
 <div class=" pt-4 lg:p-4 mb-4 leading-9">
-This project is live on netlify 
+This project is live on Netlify
 </div>
 
 <div class="pt-4 lg:p-4 mb-4 leading-9">
 Click on the button below to check it out.
 </div>
-<btn3 class ="mt-4" text=" Visit" href="https://github-users-tracker.netlify.app"> </btn3 >
+<btn3 class ="mt-4" text="Visit" href="https://github-users-tracker.netlify.app"> </btn3 >

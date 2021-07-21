@@ -1,6 +1,6 @@
 ---
 title: Countries Details App
-tab: web
+tab: dev
 description: Web app showing all Countries details.
 category: Web - Frontend
 slug: 24restcountries
