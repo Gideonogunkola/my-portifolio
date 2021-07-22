@@ -7,7 +7,7 @@
         <img
           class=" mx-auto w-screen h-auto lg:w-full"
           :src="require(`~/assets/images/${projects.img}`)"
-          alt="projects"
+          alt="Gideon Ogunkola's projects"
         />
         <h2 class="text-2xl md:text-3xl font-semibold mt-8">
           {{ projects.title }}

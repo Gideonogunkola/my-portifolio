@@ -1,6 +1,10 @@
 <template>
   <div>
-    <img class="lg:max-w-4/5 m-auto" :src="dynamicImage">
+    <img
+      class="lg:max-w-4/5 m-auto"
+      :src="dynamicImage"
+      alt="Gideon Ogunkola's project"
+    />
   </div>
 </template>
 
