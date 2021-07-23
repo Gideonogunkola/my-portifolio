@@ -14,12 +14,14 @@
         <div>
           <h1 class="common">About Me</h1>
           <p class="leading-9 mt-8 mb-8">
-            I am a UX designer and frontend Developer who is passionate about
-            design for inclusion and acessibility. I admire woking on diverse
-            projects that make people happy through simplified interaction
-            visual design. I build progressive web App using Vue.js(Nuxt.js). I
-            am an expert in the use design applications such as Photoshop,
-            Illustrator, InDesign, Adobe XD, and Figma
+            I am a data-driven UX designer and frontend developer who is
+            passionate about design for inclusion and acessibility. I am
+            cheerful, energetic and love working on diverse projects that make
+            people happy through simplified designs.
+            <br />
+            <br />
+            When I am not designing or coding, you find me reading
+            entrepreneurship books or playing video games.
           </p>
           <div class="flex md:justify-center lg:justify-start">
             <Btn3
