@@ -1,13 +1,13 @@
 <template>
   <div class="mx-auto text-xl md:text-2xl">
     <transition name="myMenu">
-      <div class="grid gap-14 grid-col-1 md:grid-cols-2 xl:grid-cols-3 mt-14">
+      <div class="grid gap-14 grid-col-1 md:grid-cols-2 xl:grid-cols-2 mt-14">
         <div v-for="(project, index) in projects" :key="index">
           <nuxt-link
             :to="{ name: 'projects-slug', params: { slug: project.slug } }"
           >
             <div
-              class=" mx-auto h-auto flex flex-col lg:w-96 lg:h-96 rounded-3xl cursor-pointer parent"
+              class=" mx-auto h-auto flex flex-col rounded-3xl cursor-pointer parent"
             >
               <img
                 class=" w-full h-full rounded-3xl"
@@ -15,11 +15,13 @@
                 alt="project-image"
               />
               <div class="child hidden lg:block">
-                <h1 class="text-2xl md:text-3xl font-semibold">
+                <h1 class="text-white text-2xl md:text-3xl font-semibold">
                   {{ project.title }}
                 </h1>
-                <p>{{ project.description }}</p>
-                <p class=" text-xl md:text-2xl font-medium pt-6 md:pt-8">
+                <p class="text-white">{{ project.description }}</p>
+                <p
+                  class="text-white text-xl md:text-2xl font-medium pt-6 md:pt-8"
+                >
                   {{ project.category }}
                 </p>
               </div>
@@ -114,7 +116,7 @@ export default {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #27a9e1cb;
+    background-color: #3535358a;
     opacity: 0;
     border-radius: 1.5rem;
     transition: all 500ms ease-out;
