@@ -1,5 +1,5 @@
 <template>
-  <div class="text-base md:text-xl">
+  <div class="text-xl md:text-2xl">
     <Header :class="background" />
     <Nuxt class="" />
     <Footer class="mt-24" />

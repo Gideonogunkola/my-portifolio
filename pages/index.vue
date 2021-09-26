@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-11/12 max-w-screen-xl mx-auto text-xl md:text-2xl pt-20 lg:pt-24"
+    class="w-11/12 max-w-screen-xl mx-auto  pt-20 lg:pt-24"
   >
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-32 md:gap-y-20 ">
       <!-- first-grid -->
@@ -15,7 +15,7 @@
               </p>
             </div>
             <div
-              class="pt-8 text-3xl leading-tight md:text-5xl lg:text-5xl xl:text-h1 font-bold md:leading-none"
+              class="pt-4 text-4xl leading-tight md:text-5xl lg:text-5xl xl:text-h1 font-bold md:leading-none"
             >
               <typewriter
                 :speed="200"
@@ -23,21 +23,20 @@
                 :start-delay="200"
                 :words="[
                   'UX Designer.',
-                  'Frontend Engineer.',
+                  'Web Developer.',
                   'Visual Designer.'
                 ]"
                 :erase-delay="300"
               >
-                I'm Gideon Ogunkola, <br />
+                I'm Gideon O. <br />
                 A
               </typewriter>
             </div>
-            <p class="pt-6 w-11/12 leading-9">
-              I'm a UX designer and frontend developer who builds products that
-              solve real-time problems through user-centric design.
+            <p class="pt-4 w-11/12 leading-9">
+               I build products that solve real-time problems through user-centric designs.
             </p>
 
-            <div class="flex pt-8 md:justify-center lg:justify-start">
+            <div class="flex pt-10 md:justify-center lg:justify-start">
               <BtnPry text=" My Works" href="/projects" />
               <BtnSec text=" Let's talk" href="/contact" class="pl-6 md:pl-8" />
             </div>

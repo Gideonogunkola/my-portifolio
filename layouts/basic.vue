@@ -1,5 +1,5 @@
 <template>
-  <div class="text-base md:text-xl">
+  <div class="text-base md:text-2xl ">
     <Nuxt class="" />
   </div>
 </template>
