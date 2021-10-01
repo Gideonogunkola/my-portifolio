@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-ligColor dark:text-darColor">
     <form @submit.prevent="sendEmail" class="relative">
       <div>
         <input

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-11/12 max-w-screen-xlmd:w-4/5 mx-auto text-xl md:text-2xl mt-24"
+    class="w-11/12 max-w-screen-xlmd:w-4/5 mx-auto text-xl md:text-2xl mt-24 text-ligColor dark:text-darColor"
   >
     <section class="contact">
       <div>

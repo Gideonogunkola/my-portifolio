@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-11/12 max-w-screen-xl mx-auto  pt-20 lg:pt-24"
+    class="w-11/12 max-w-screen-xl mx-auto text-ligColor dark:text-darColor  pt-20 lg:pt-24"
   >
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-32 md:gap-y-20 ">
       <!-- first-grid -->

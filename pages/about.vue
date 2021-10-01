@@ -1,5 +1,5 @@
 <template>
-  <div class="w-11/12 max-w-screen-xl mx-auto text-xl md:text-2xl">
+  <div class="w-11/12  max-w-screen-xl mx-auto text-xl md:text-2xl text-ligColor dark:text-darColor">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <div
         class="content-area1 mt-20 lg:mt-24 flex items-center justify-center lg:items-center"
