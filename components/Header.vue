@@ -28,8 +28,9 @@
             @click="navbar"
           >
             <span
-              class="iconify text-pryColor w-12 h-12 cursor-pointer"
+              class="iconify text-pryColor w-12 h-12 cursor-pointer focus:outline-none"
               :data-icon="displayicon"
+              role="button"
               data-inline="false"
             ></span>
             <p class=" hidden md:block text-xl">Menu</p>
@@ -67,15 +68,16 @@
 
               <div>
                 <div
-                  class="flex items-center border-transparent focus:border-transparent"
+                  class="flex items-center border-transparent focus:border-transparent focus:outline-none"
                   tabindex="0"
                   role="button"
                   aria-pressed="false"
                   @click="navbar"
                 >
                   <span
-                    class="iconify text-pryColor w-12 h-12 cursor-pointer"
+                    class="iconify text-pryColor w-12 h-12 cursor-pointer focus:outline-none"
                     :data-icon="displayicon"
+                    role="button"
                     data-inline="false"
                   ></span>
                   <p class=" hidden md:block text-xl">Close</p>

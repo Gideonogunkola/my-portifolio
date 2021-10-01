@@ -66,9 +66,9 @@ export default {
   computed: {
     customBorderColor() {
       if (this.$colorMode.preference === "light") {
-        return "border-secColor";
+        return "border-ligColor";
       } else {
-        return "border-white";
+        return "border-darColor";
       }
     },
     myText() {
