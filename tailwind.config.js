@@ -15,7 +15,7 @@ module.exports = {
       },
       fontSize: {
         normal: ["1.3rem", "20px"],
-        h1: ["3.6rem", ""]
+        h3: ["2.3rem"]
       },
       colors: {
         pryColor: {
@@ -24,8 +24,16 @@ module.exports = {
           dark: "#08A0DF"
         },
         secColor: {
-          DEFAULT: "#090C10"
+          DEFAULT: "#090C10",
+          dark: "#0E0E0E"
+        },
+        ligColor: {
+          DEFAULT: "#434343"
+        },
+        darColor:{
+          DEFAULT: "#AFAFAF"
         }
+
       },
       boxShadow: {
         before:
@@ -47,7 +55,11 @@ module.exports = {
         "1/2": "50%",
         "3/4": "75%",
         "4/5": "80%"
-      }
+      },
+      lineHeight: {
+        'before-tight': '1.1',
+        '12': '3rem',
+       }
     }
   },
   variants: {

@@ -5,7 +5,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-32 md:gap-y-20 ">
       <!-- first-grid -->
       <div
-        class="content-area mt-14 md:mt-0 flex md: justify-cente items-center md:text-center lg:text-left"
+        class="content-area mt-14 md:mt-0 flex md:justify-center items-center md:text-center lg:text-left"
       >
         <div class="">
           <div class="">
@@ -15,7 +15,7 @@
               </p>
             </div>
             <div
-              class="pt-4 text-4xl leading-tight md:text-5xl lg:text-5xl xl:text-h1 font-bold md:leading-none"
+              class="pt-6 text-black dark:text-white text-4xl md:text-5xl xl:text-6xl font-bold"
             >
               <typewriter
                 :speed="200"
@@ -27,13 +27,14 @@
                   'Visual Designer.'
                 ]"
                 :erase-delay="300"
+                class="leading-before-tight"
               >
                 I'm Gideon O. <br />
                 A
               </typewriter>
             </div>
-            <p class="pt-4 w-11/12 leading-9">
-               I build products that solve real-time problems through user-centric designs.
+            <p class="pt-6 w-11/12 leading-9">
+               I build products that solve real-time problems through human-centered design.
             </p>
 
             <div class="flex pt-10 md:justify-center lg:justify-start">
@@ -46,7 +47,7 @@
 
       <!-- second-grid -->
       <div
-        class="content-area1 flex lg:items-center md:justify-center lg:justify-end"
+        class="content-area1 pt-4 pd:mt-0 flex lg:items-center md:justify-center lg:justify-end"
       >
         <img
           class="w-auto h-auto lg:h-high"

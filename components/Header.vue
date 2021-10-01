@@ -67,7 +67,7 @@
 
               <div>
                 <div
-                  class="flex items-center focus:border-transparent"
+                  class="flex items-center border-transparent focus:border-transparent"
                   tabindex="0"
                   role="button"
                   aria-pressed="false"
@@ -91,19 +91,19 @@
                 <nuxt-link to="/projects">My Works</nuxt-link>
               </li>
               <li class="menu"><nuxt-link to="/about">About Me</nuxt-link></li>
-              <p class="pt-14 text-right font-bold text-2xl">Let's Talk</p>
-              <p class="pt-3 text-right text-xl md:text-2xl">
+              <p class="pt-14 text-center font-bold text-2xl">Let's Talk</p>
+              <p class="pt-3 text-center text-xl md:text-2xl">
                 <a href="mailto:me@gideonogunkola.com"
                   >ogunkolagideon@gmail.com</a
                 >
               </p>
-              <p class="pt-2 text-right text-xl md:text-2xl">
+              <p class="pt-2 text-center text-xl md:text-2xl">
                 <a href="tel:+234 810 674 4642">+234 810 674 4642</a>2
               </p>
               <div>
                 <a
                   href="https://wa.link/qkglzi"
-                  class="flex justify-end items-center pt-2"
+                  class="flex justify-center items-center pt-2"
                   target="_blank"
                 >
                   <span
@@ -193,7 +193,7 @@ export default {
 
 <style scoped>
 .menu {
-  @apply text-3xl md:text-4xl font-bold py-5 text-right;
+  @apply text-4xl md:text-5xl font-bold py-5 text-center;
 }
 .myMenu-enter-active,
 .myMenu-leave-active {

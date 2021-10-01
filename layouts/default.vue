@@ -34,11 +34,11 @@ body {
   margin: 0;
 }
 .dark-mode {
-  @apply text-white bg-secColor;
+  @apply text-darColor bg-secColor;
 }
 
 .light-mode {
-  @apply text-secColor bg-white;
+  @apply text-ligColor bg-white;
 }
 
 /* width */
