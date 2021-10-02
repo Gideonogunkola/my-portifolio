@@ -9,7 +9,7 @@
         <nuxt-link
           :to="{ name: 'projects-slug', params: { slug: project.slug } }">
           <div
-            class=" mx-auto h-auto flex flex-col lg:w-96 lg:h-96 rounded-3xl cursor-pointer parent">
+            class=" mx-auto h-auto flex flex-col lg:w-96 lg:h-96 rounded-2xl cursor-pointer parent">
             <img
               class=" w-full"
               :src="require(`~/assets/images/${project.img}`)"

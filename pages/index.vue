@@ -85,7 +85,7 @@
                 h-72
                 w-60
                 border-blue-500
-                rounded-3xl
+                rounded-2xl
                 flex
                 items-center
                 mb-8
@@ -105,7 +105,7 @@
                 h-72
                 w-60
                 border-green-500
-                rounded-3xl
+                rounded-2xl
                 flex
                 items-center
                 mb-8
@@ -125,7 +125,7 @@
                 h-72
                 w-60
                 border-yellow-500
-                rounded-3xl
+                rounded-2xl
                 flex
                 items-center
                 mb-8
@@ -145,7 +145,7 @@
                 h-72
                 w-60
                 border-purple-500
-                rounded-3xl
+                rounded-2xl
                 flex
                 items-center
                 mb-8
@@ -165,7 +165,7 @@
                 h-72
                 w-60
                 border-red-500
-                rounded-3xl
+                rounded-2xl
                 flex
                 items-center
                 mb-8

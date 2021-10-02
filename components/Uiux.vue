@@ -7,10 +7,10 @@
             :to="{ name: 'projects-slug', params: { slug: project.slug } }"
           >
             <div
-              class=" mx-auto h-auto flex flex-col rounded-3xl cursor-pointer parent"
+              class=" mx-auto h-auto flex flex-col rounded-2xl cursor-pointer parent"
             >
               <img
-                class=" w-full h-full rounded-3xl"
+                class=" w-full h-full rounded-2xl"
                 :src="require(`~/assets/images/${project.img}`)"
                 alt="project-image"
               />
@@ -119,7 +119,7 @@ export default {
     left: 0;
     background-color: #161616dc;
     opacity: 0;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     transition: all 500ms ease-out;
   }
   .child {

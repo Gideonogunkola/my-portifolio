@@ -33,7 +33,7 @@
         ></textarea>
       </div>
       <div>
-        <button class="common2 h-16 lg:h-normal" :class="myText">
+        <button class="common2 h-14 lg:h-16" :class="myText">
           {{ actionMsg }}
         </button>
       </div>
@@ -150,15 +150,15 @@ export default {
 
 <style scoped>
 .common {
-  @apply text-xl md:text-2xl px-6 lg:px-10 mb-6 py-3 h-20 w-full rounded-3xl 
+  @apply text-xl md:text-2xl px-6 lg:px-10 mb-6 py-3 h-20 w-full rounded-2xl 
                 bg-transparent border-2 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-pryColor;
 }
 .common1 {
-  @apply text-xl md:text-2xl px-6 lg:px-10 mb-6 py-3 h-40 w-full rounded-3xl 
+  @apply text-xl md:text-2xl px-6 lg:px-10 mb-6 py-3 h-40 w-full rounded-2xl 
                 bg-transparent border-2 focus:border-transparent focus:outline-none focus:ring-2 focus:ring-pryColor;
 }
 .common2 {
-  @apply w-36 md:w-44 rounded-3xl bg-pryColor flex justify-center items-center cursor-pointer 
+  @apply w-36 md:w-44 rounded-2xl bg-pryColor flex justify-center items-center cursor-pointer 
            focus:border-pryColor focus:outline-none -mt-3 lg:w-48 hover:bg-transparent hover:text-pryColor border-pryColor border-2 duration-300 ease-linear;
 }
 input:-webkit-autofill,
