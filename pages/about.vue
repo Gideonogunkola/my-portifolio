@@ -14,7 +14,7 @@
         <div>
           <h1 class="common">About Me</h1>
           <p class="leading-9 mt-8 mb-8">
-            I am a data-driven UX designer and frontend developer who is
+            I am a data-driven visual and UX designer with frontend developement expertise who is
             passionate about design for inclusion and acessibility. I am
             cheerful, energetic and love working on diverse projects that make
             people happy through simplified designs.
