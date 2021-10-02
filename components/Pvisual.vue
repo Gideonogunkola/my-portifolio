@@ -93,7 +93,7 @@ export default {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #3535358a;
+    background-color: #161616a8;
     opacity: 0;
     border-radius: 1.5rem;
     transition: all 500ms ease-out;

@@ -31,7 +31,7 @@ module.exports = {
           DEFAULT: "#434343"
         },
         darColor:{
-          DEFAULT: "#AFAFAF"
+          DEFAULT: "#929292"
         }
 
       },
