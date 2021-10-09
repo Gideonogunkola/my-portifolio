@@ -18,7 +18,7 @@
         <div>
           <a href="https://www.linkedin.com/in/gideonogunkola/">
             <span
-              class="iconify h-8 w-8 ml-2 lg:ml-3 mr-2 lg:mr-0"
+              class="iconify h-8 w-8 ml-2 lg:ml-3 mr-2 lg:mr-0 hover:text-pryColor"
               data-icon="brandico:linkedin-rect"
               data-inline="false"
             ></span>
@@ -27,7 +27,7 @@
         <div>
           <a href="https://www.behance.net/gideonogunkola">
             <span
-              class="iconify h-8 w-8 ml-2 lg:ml-3 mr-2 lg:mr-0"
+              class="iconify h-8 w-8 ml-2 lg:ml-3 mr-2 lg:mr-0 hover:text-pryColor"
               data-icon="fa:behance-square"
               data-inline="false"
             ></span>
@@ -36,7 +36,7 @@
         <div>
           <a href="https://github.com/Gideonogunkola">
             <span
-              class="iconify h-9 w-9 ml-2 lg:ml-3 mr-2 lg:mr-0"
+              class="iconify h-9 w-9 ml-2 lg:ml-3 mr-2 lg:mr-0 hover:text-pryColor"
               data-icon="jam:github"
               data-inline="false"
             ></span>
@@ -45,7 +45,7 @@
         <div>
           <a href="https://twitter.com/gideonogunkola">
             <span
-              class="iconify h-8 w-8 ml-2 lg:ml-3 mr-2 lg:mr-0"
+              class="iconify h-8 w-8 ml-2 lg:ml-3 mr-2 lg:mr-0 hover:text-pryColor"
               data-icon="whh:squaretwitter"
               data-inline="false"
             ></span>
