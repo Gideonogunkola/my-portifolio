@@ -2,7 +2,7 @@
 title: HandyMan
 tab: uiux
 description: An on-demand service app
-category: UI/UX - Mobile
+category: UX - Mobile
 slug: 06handyman
 img: handyman.jpg
 ---

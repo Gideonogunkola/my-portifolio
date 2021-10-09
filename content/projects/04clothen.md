@@ -2,7 +2,7 @@
 title: Clothen
 tab: uiux
 description: A cloth donation app
-category: UI/UX - Mobile
+category: UX - Mobile
 slug: 04clothen
 img: clothen.jpg
 ---

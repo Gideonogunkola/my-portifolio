@@ -2,14 +2,14 @@
   <div>
     <div class="">
       <TabNav
-        :tabs="['UI/UX Design', 'Visual Design', 'Web Development']"
+        :tabs="['UX Design', 'Visual Design', 'Web Development']"
         :selected="selected"
         @selected="setSelected"
       >
       </TabNav>
 
       <div class="">
-        <Tab :isSelected="selected === 'UI/UX Design'">
+        <Tab :isSelected="selected === 'UX Design'">
           <Uiux />
         </Tab>
         <Tab :isSelected="selected === 'Visual Design'">

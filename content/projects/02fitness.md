@@ -2,7 +2,7 @@
 title: Fitley
 tab: uiux
 description: Fitness Ad Page
-category: UI/UX - Web
+category: UI - Web
 slug: 02fitness
 img: Fitness-ad.png
 ---

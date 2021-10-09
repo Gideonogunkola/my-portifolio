@@ -2,7 +2,7 @@
 title: My Portifolio
 tab: uiux
 description: Porfiloio Design
-category: UI/UX - Web
+category: UI - Web
 slug: 01mine
 img: myportifolio.jpg
 ---

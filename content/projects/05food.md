@@ -2,7 +2,7 @@
 title: Food Delivery
 tab: uiux
 description: A food delivery app
-category: UI/UX - Mobile
+category: UX - Mobile
 slug: 05food
 img: food-delivery.png
 ---

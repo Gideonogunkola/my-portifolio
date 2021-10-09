@@ -5,7 +5,7 @@
         tabindex="0"
         role="button"
         aria-pressed="false"
-        class="h-16 w-36 lg:w-48 md:w-44 rounded-2xl text-pryColor border-pryColor
+        class="h-16 w-36 lg:w-48 md:w-44 rounded-2xl text-pryColor border-pryColor active:bg-pryColor-dark
             duration-300 ease-linear hover:bg-pryColor border-2 flex justify-center items-center cursor-pointer "
         :class="myText"
       >

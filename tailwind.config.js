@@ -21,7 +21,7 @@ module.exports = {
         pryColor: {
           light: "#A6DFF8",
           DEFAULT: "#27AAE1",
-          dark: "#08A0DF"
+          dark: "#005C83"
         },
         secColor: {
           DEFAULT: "#090C10",
@@ -31,7 +31,7 @@ module.exports = {
           DEFAULT: "#434343"
         },
         darColor:{
-          DEFAULT: "#929292"
+          DEFAULT: "#C4C4C4"
         }
 
       },
@@ -39,7 +39,7 @@ module.exports = {
         before:
           "0 4px 6px -1px rgba(0, 0, 0, .4), 0 2px 4px -1px rgba(0, 0, 0, .4)",
         now:
-          "0 4px 6px -1px rgba(0, 0, 0, .7), 0 2px 4px -1px rgba(0, 0, 0, .4)"
+          "0 4px 6px -1px rgba(0, 0, 0, 1), 0 2px 4px -1px rgba(0, 0, 0, 1)"
       },
       margin: {
         "100": "30rem",
@@ -88,7 +88,10 @@ module.exports = {
       "hover",
       "responsive",
       "focus"
-    ]
+    ],
+    extend: {
+      backgroundColor: ['active'],
+    }
   },
   plugins: [require("@tailwindcss/forms"), require("tailwindcss-dark-mode")()]
 };

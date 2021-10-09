@@ -2,7 +2,7 @@
 title: SmartWash
 tab: uiux
 description: Companion mobile app for smart washing machine
-category: UI/UX - Mobile
+category: UX - Mobile
 slug: 07smartwash
 img: smart-wash.jpg
 ---
