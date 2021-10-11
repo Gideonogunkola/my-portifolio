@@ -7,10 +7,17 @@
             :to="{ name: 'projects-slug', params: { slug: project.slug } }"
           >
             <div
-              class=" mx-auto h-auto flex flex-col rounded-2xl cursor-pointer parent"
+              class="
+                mx-auto
+                h-auto
+                flex flex-col
+                rounded-2xl
+                cursor-pointer
+                parent
+              "
             >
               <img
-                class=" w-full h-full rounded-2xl"
+                class="w-full h-full rounded-2xl"
                 :src="require(`~/assets/images/${project.img}`)"
                 alt="project-image"
               />
@@ -20,21 +27,27 @@
                 </h1>
                 <p class="text-white">{{ project.description }}</p>
                 <p
-                  class="text-white text-xl md:text-2xl font-medium pt-6 md:pt-8"
+                  class="
+                    text-white text-xl
+                    md:text-2xl
+                    font-medium
+                    pt-6
+                    md:pt-8
+                  "
                 >
                   {{ project.category }}
                 </p>
               </div>
             </div>
             <div
-              class="w-full pb-8 pl-8 pt-14 pr-8 lg:hidden rounded-b-3xl -mt-6 "
+              class="w-full pb-8 pl-8 pt-14 pr-8 lg:hidden rounded-b-3xl -mt-6"
               :class="myShadow"
             >
               <h1 class="text-2xl md:text-3xl font-semibold">
                 {{ project.title }}
               </h1>
               <p>{{ project.description }}</p>
-              <p class=" text-xl md:text-2xl font-medium pt-6 md:pt-8">
+              <p class="text-xl md:text-2xl font-medium pt-6 md:pt-8">
                 {{ project.category }}
               </p>
             </div>
@@ -49,7 +62,7 @@
 export default {
   data() {
     return {
-      projects: []
+      projects: [],
     };
   },
   async fetch() {
@@ -64,11 +77,10 @@ export default {
     myShadow() {
       if (this.$colorMode.preference === "dark") {
         return "shadow-now bg-blue";
-      } else {
-        return "shadow-md";
       }
-    }
-  }
+      return "shadow-md";
+    },
+  },
 };
 </script>
 

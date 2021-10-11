@@ -47,7 +47,7 @@
 
       <!-- second-grid -->
       <div
-        class="content-area1 pt-4 pd:mt-0 flex lg:items-center md:justify-center lg:justify-end"
+        class="content-area1 mt-4 md:mt-0 flex lg:items-center md:justify-center lg:justify-end"
       >
         <img
           class="w-auto h-auto lg:h-high"
@@ -58,7 +58,7 @@
     </div>
     <!--  Project Section Begins  -->
     <section class="projects">
-      <div class="title -pt-10 lg:pt-16">
+      <div class="title pt-10 lg:pt-16">
         <h1 class="common">My Works</h1>
         <p class="text-center pt-4 pb-10 lg:pb-12">Some selected projects</p>
       </div>

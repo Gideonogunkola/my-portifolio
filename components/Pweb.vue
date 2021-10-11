@@ -87,9 +87,8 @@ export default {
     myShadow() {
       if (this.$colorMode.preference === "dark") {
         return "shadow-now bg-blue";
-      } else {
-        return "shadow-md";
       }
+        return "shadow-md";
     }
   }
 };

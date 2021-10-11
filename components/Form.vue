@@ -33,7 +33,7 @@
         ></textarea>
       </div>
       <div>
-        <button class="common2 h-14 lg:h-16" :class="myText">
+        <button class="common2 h-16" :class="myText">
           {{ actionMsg }}
         </button>
       </div>
@@ -125,25 +125,7 @@ export default {
       }
     }
 
-    // sendEmail(e) {
-    //     try {
-    //         emailjs.sendForm('service_affn4z', 'template_hf1xe0a', e.target, 'user_5kNfrpVcBTOQaxxsAxwXT', {
-    //         name: this.name,
-    //         email: this.email,
-    //         message: this.meessage
-    //         })
-    //         this.action = 'sending...'
-    //         this.alertMessage = 'Message sent sucessfully'
-    //         setTimeout(() => this.alertMessage = null,
-    //         3000)
-    //     } catch (error) {
-    //         console.log({error})
-    //     }
-    //     // Reset form field
-    //     this.name = ''
-    //     this.email = ''
-    //     this.message = ''
-    //     },
+    
   }
 };
 </script>
