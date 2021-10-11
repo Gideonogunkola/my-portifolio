@@ -47,7 +47,7 @@
 
       <!-- second-grid -->
       <div
-        class="content-area1 mt-4 md:mt-0 flex lg:items-center md:justify-center lg:justify-end"
+        class="content-area1 pt-4 md:pt-0 flex lg:items-center md:justify-center lg:justify-end"
       >
         <img
           class="w-auto h-auto lg:h-high"
