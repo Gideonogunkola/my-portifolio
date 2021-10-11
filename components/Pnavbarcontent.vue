@@ -2,14 +2,14 @@
   <div>
     <div class="pt-20 lg:pt-12 text-xl lg:text-2xl">
       <TabNav
-        :tabs="['UI/UX Design', 'Visual Design', 'Web Development']"
+        :tabs="['UX Design', 'Visual Design', 'Web Development']"
         :selected="selected"
         @selected="setSelected"
       >
       </TabNav>
       <div class="">
-        <Tab :isSelected="selected === 'UI/UX Design'">
-          <Puiux />
+        <Tab :isSelected="selected === 'UX Design'">
+          <Pux />
         </Tab>
         <Tab :isSelected="selected === 'Visual Design'">
           <Pvisual />
@@ -27,7 +27,7 @@
 export default {
   data() {
     return {
-      selected: "UI/UX Design"
+      selected: "UX Design"
     };
   },
   methods: {

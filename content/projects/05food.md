@@ -29,7 +29,7 @@ I started this project by carrying our researh online to get the number of peopl
 <!--more-->
 
   <div class="mt-14 pt-4 lg:p-4 mb-4 leading-9">
-    After this, I brainstormed on all possible solutions to address the painpoints, I noted different kinds of suggestions. The idea was to get large quantity of ideas that can be narrowd down late. I came up with the features for the mobile app before moving on the design the low fidelity prototype.  
+    After this, I brainstormed on all possible solutions to address the painpoints, I noted different kinds of suggestions. The idea was to get large quantity of ideas that can be narrowd down late. I came up with the features for the mobile app before moving on the design the wireframe.  
   </div>
 
    <div class="mt-14">
@@ -37,13 +37,12 @@ I started this project by carrying our researh online to get the number of peopl
   </div>
 
 <div class=" mt-14 pt-4 lg:p-4 mb-4 leading-9">
-With the low-fideity prototype created, i moved a step forward by desgning and getting all the visual elements needed for the app, and then later designed the high fidelity prototypes. Check out some of the featured screens
-
+With the wireframe created, I moved a step forward by desgning and getting all the visual elements needed for the app, and then later designed the high fidelity prototypes. Check out some of the featured screens
+</div>
  <div class="mt-14">
     <div><dynamic-image filename="1.jpg"></dynamic-image> </div>
-        <div><dynamic-image class = "mt-14" filename= "2.jpg"></dynamic-image> </div>
+        <div><dynamic-image  filename= "2.jpg"></dynamic-image> </div>
   </div>
-</div>
 
 <div class="pt-4 lg:p-4 mb-4 leading-9">
 For full casetudy and more screens. Kindly click the button below to check more on behance.
