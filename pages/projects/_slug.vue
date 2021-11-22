@@ -1,23 +1,24 @@
 <template>
   <div
-    class="w-11/12  max-w-screen-xl mx-auto text-xl md:text-2xl mt-24 lg:h-screen"
+    class="w-11/12  max-w-screen-xl mx-auto text-xl md:text-2xl mt-24"
   >
-    <div class="pt-14 grid grid-cols-1 lg:grid-cols-3 lg:gap-14 lg:h-screen">
-      <div class="rounded-2xl lg:sticky lg:top-0">
-        <img
+    <div class=" pt-10 md:pt-20">
+      <div class="lg:top-6">   
+        <h2 class="text-4xl md:text-6xl font-semibold mt-8 text-black dark:text-white">
+          {{ projects.title }}
+        </h2>
+        <p class=" pt-2">{{ projects.description }}</p>
+
+        <!-- <p class=" text-xl md:text-2xl font-medium pt-2">
+          {{ projects.category }}
+        </p> -->
+         <!-- <img
           class=" mx-auto w-screen h-auto lg:w-full"
           :src="require(`~/assets/images/${projects.img}`)"
           alt="Gideon Ogunkola's projects"
-        />
-        <h2 class="text-2xl md:text-3xl font-semibold mt-8">
-          {{ projects.title }}
-        </h2>
-        <p>{{ projects.description }}</p>
-        <p class=" text-xl md:text-2xl font-medium pt-6 md:pt-8">
-          {{ projects.category }}
-        </p>
+        /> -->
       </div>
-      <div class=" mt-8 lg:mt-0 col-span-2 lg:h-4/5 lg:overflow-y-auto">
+      <div class=" mt-14">
         <nuxt-content
           class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto"
           :document="projects"

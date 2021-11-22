@@ -1,7 +1,7 @@
 <template>
   <div>
     <img
-      class="lg:w-11/12 m-auto"
+      class="w-full h-auto"
       :src="dynamicImage"
       alt="Gideon Ogunkola's project"
     />

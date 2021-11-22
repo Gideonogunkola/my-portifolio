@@ -199,7 +199,7 @@ export default {
 }
 .myMenu-enter-active,
 .myMenu-leave-active {
-  transition: opacity 1.5s;
+  transition: opacity 0.8s;
 }
 .myMenu-enter,
 .myMenu-leave-to {

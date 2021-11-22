@@ -7,24 +7,37 @@ slug: 07smartwash
 img: smart-wash.jpg
 ---
 
-<div class="lg:p-4 pt-4 mb-4 text-pryColor font-bold text-2xl lg:text-4xl">
-  Project Overview
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 pt-6">
+  <div>
+    <div class="text-black dark:text-white font-bold text-2xl">
+      Project Overview
+    </div>
+    <div class="lg:pt-4 leading-9">
+    The idea is to create a companion app interface for a washing machine with no physical control. This app helps users to effectively multitask by combining washing with while doing other household chores
+    </div>
+  </div>
+
+  <div>
+  <span class = "text-black dark:text-white font-bold text-2xl"> Responsibility:</span>
+  <div class = "pt-4"> User research, prototyping, UI design</div>
+  </div>
 </div>
 
-<div class="lg:p-4 mb-4 leading-9">
-The idea is to create a companion app interface for a washing machine with no physical control. This app helps users to effectively multitask by combining washing with while doing other household chores
-<div class="pt-4 ">
- <span class = "text-pryColor font-bold"> Responsibility:</span> Visual Designer, User Researcher, Interface Designer
-</div>
-</div>
+  <div class="mt-16">
+    <div><dynamic-image filename="smart-wash.jpg"></dynamic-image> </div>   
+  </div>
 
-<div class=" pt-4 lg:p-4 mb-4 leading-9">
-I started this project by disseminating online survey to get user pain points from their experience using washing machine.  From the information I gatherered, I brainstormed on the solutions to the challengess, which form the basis for the feaure I displayed in the washing machine app.
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 mt-16">
+<div class=" pt-4 lg:pt-4 mb-4 leading-9">
+I started this project by disseminating online survey to get user pain points from their experience using washing machine. 
+</div>
+<div> From the information I gatherered, I brainstormed on the solutions to the challengess, which form the basis for the feaure I displayed in the washing machine app. Below is the personas for the grouped target users.
+</div>
 </div>
 
   <div class="mt-14">
     <div><dynamic-image filename="smart-persona 1.jpg"></dynamic-image> </div>
-    <div Class = ""><dynamic-image filename="smart-persona 2.jpg"></dynamic-image> </div>
+    <div><dynamic-image filename="smart-persona 2.jpg"></dynamic-image> </div>
   </div>
 
 <!--more-->
