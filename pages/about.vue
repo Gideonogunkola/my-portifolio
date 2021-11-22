@@ -12,7 +12,7 @@
       </div>
       <div class="content-area mt-20 lg:mb-0 lg:mt-24 flex  lg:items-center">
         <div>
-          <h1 class="common">About Me</h1>
+          <h1 class="common">Meet Me</h1>
           <p class="leading-9 mt-8 mb-8">
             I am a data-driven visual and UX designer with frontend developement expertise who is
             passionate about design for inclusion and acessibility. I am
@@ -26,7 +26,7 @@
           <div class="flex md:justify-center lg:justify-start">
             <Btn3
               text="My Resume"
-              href="https://drive.google.com/file/d/1hLm4C_ZyQjAc1tkwr3D8BEpxko3ueB37/view"
+              href="https://drive.google.com/file/d/17l0Fo61MsllpXpaiXfVBOFc_JF4MbN9S/view?usp=sharing"
             />
           </div>
         </div>
