@@ -49,9 +49,9 @@
       <div
         class="content-area1 pt-4 md:pt-0 flex lg:items-center md:justify-center lg:justify-end"
       >
-        <img
+        <NuxtImg
           class="w-auto h-auto lg:h-high"
-          src="@/assets/images/Gideon Ogunkola 1.png"
+          src="images/Gideon Ogunkola 1.png"
           alt="Gideon Ogunkola"
         />
       </div>

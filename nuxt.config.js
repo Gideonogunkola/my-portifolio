@@ -3,7 +3,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Gideon Ogunkola | UX Designer | Frontend Developer",
+    title: "Gideon Ogunkola | UX Designer based in Nigeria",
     htmlAttrs: {
       lang: "en"
     },
@@ -20,12 +20,6 @@ export default {
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon-02.png" }
-      // {
-      //   rel: "stylesheet",
-      //   type: "text/css",
-      //   href:
-      //     "//db.onlinewebfonts.com/c/22e08e9cd2a72d3d02589e3033a3178e?family=Begum"
-      // }
     ],
     script: [{ src: "https://code.iconify.design/1/1.0.7/iconify.min.js" }]
   },
@@ -52,13 +46,14 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
-    "@nuxtjs/google-analytics"
+    "@nuxtjs/google-analytics",
+
   ],
   googleAnalytics: {
     id: "277994064"
   },
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxt/content"],
+  modules: ["@nuxt/content", '@nuxt/image'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -66,10 +61,17 @@ export default {
   },
   purgeCSS: {
     whitelist: ["dark-mode"]
-  }
-
-  // transition:{
-  //   name:'page',
-  //   mode:'in'
-  // }
+  },
+  image: {
+    // The screen sizes predefined by `@nuxt/image`:
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536,
+    },
+  },
 };

@@ -9,7 +9,7 @@
             <div
               class=" mx-auto h-auto flex flex-col rounded-2xl cursor-pointer parent"
             >
-              <img
+              <NuxtImg
                 class=" w-full h-full rounded-2xl"
                 :src="require(`~/assets/images/${project.img}`)"
                 alt="project-image"
