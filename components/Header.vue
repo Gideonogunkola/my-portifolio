@@ -52,7 +52,7 @@
           >
             <div role>
               <nuxt-link to="/" class="">
-                <NuxtImg :src="imageUrl" alt="logo" />
+                <img :src="imageUrl" alt="logo" />
               </nuxt-link>
             </div>
             <div
