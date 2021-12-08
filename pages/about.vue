@@ -4,9 +4,9 @@
       <div
         class="content-area1 mt-20 lg:mt-24 flex items-center justify-center lg:items-center"
       >
-        <nuxt-img
+        <img
           class=" w-auto h-auto"
-          src="images/Gideon Ogunkola 2.png"
+          src="~/assets/images/Gideon Ogunkola 2.png"
           alt="Gideon Ogunkola"
         />
       </div>

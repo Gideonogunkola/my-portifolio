@@ -16,7 +16,7 @@
                 parent
               "
             >
-              <NuxtImg
+              <img
                 class="w-full h-full rounded-2xl"
                 :src="require(`~/assets/images/${project.img}`)"
                 alt="project-image"

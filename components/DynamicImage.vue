@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NuxtImg
+    <Img
       class="w-full h-auto"
       :src="dynamicImage"
       alt="Gideon Ogunkola's project"
